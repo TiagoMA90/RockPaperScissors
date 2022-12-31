@@ -1,0 +1,55 @@
+body    {
+    background-color: #2e2e2e;
+}
+
+h2  {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.hands  {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+#rock   {
+    background-color: brown;
+    border-radius: 50%;
+    border: 2.5px solid;
+    height: 140px;
+    width: 140px;
+}
+
+#paper  {
+    background-color: white;
+    border-radius: 50%;
+    border: 2.5px solid;
+    height: 140px;
+    width: 140px;
+}
+
+#scissors   {
+    background-color: gray;
+    border-radius: 50%;
+    border: 2.5px solid;
+    height: 140px;
+    width: 140px;
+}
+
+#reset  {
+    background-color: red;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2.5px solid;
+}
