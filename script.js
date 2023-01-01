@@ -1,4 +1,9 @@
-let title = document.getElementById("title");
-console.log("title.innerText");
+let rock = document.getElementById("rock")
+let paper = document.getElementById("paper")
+let scissors = document.getElementById("scissors")
 
-title.innerText = "Rock Paper Shitgun"
+rock.onclick = () => console.log("user played rock")
+paper.onclick = () => console.log("user played paper")
+scissors.onclick = () => console.log("user played scissors")
+
+alert("Hello")
