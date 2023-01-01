@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
 
+/*Body and overall properties of the DOM*/
 body    {
     background-color: #2e2e2e;
 }
@@ -13,13 +14,15 @@ body    {
     margin-top: 100px;
 }
 
-
+/*---Player properties---
+Player field */
 .hands  {
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
 
+/* Player hands */
 #rock   {
     background-color: #b90000;
     border-radius: 50%;
@@ -44,6 +47,7 @@ body    {
     width: 150px;
 }
 
+/* Reset Button */
 #reset  {
     background-color: #b90000;
     border-radius: 50%;
@@ -56,4 +60,19 @@ img {
     width: 125px;
     border-radius: 50%;
     border: 2.5px solid;
+}
+
+/*---Computer properties---
+COM field*/
+#comHands   {
+    display: flex;
+    justify-content: center;
+}
+/* COM hand/Button */
+#com  {
+    background-color: #b90000;
+    border-radius: 50%;
+    border: 2.5px solid;
+    height: 200px;
+    width: 200px;
 }
