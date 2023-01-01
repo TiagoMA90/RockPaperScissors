@@ -17,12 +17,11 @@ body    {
 .hands  {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
     margin-top: 100px;
 }
 
 #rock   {
-    background-color: brown;
+    background-color: #b90000;
     border-radius: 50%;
     border: 2.5px solid;
     height: 150px;
@@ -30,7 +29,7 @@ body    {
 }
 
 #paper  {
-    background-color: #e400008f;
+    background-color: #b90000;
     border-radius: 50%;
     border: 2.5px solid;
     height: 150px;
@@ -38,7 +37,7 @@ body    {
 }
 
 #scissors   {
-    background-color: #e400008f;
+    background-color: #b90000;
     border-radius: 50%;
     border: 2.5px solid;
     height: 150px;
@@ -46,7 +45,7 @@ body    {
 }
 
 #reset  {
-    background-color: #e400008f;
+    background-color: #b90000;
     border-radius: 50%;
     height: 100px;
     width: 100px;
