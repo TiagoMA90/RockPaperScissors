@@ -1,6 +1,8 @@
+// Fetch the elements into the DOM
 let rock = document.getElementById("rock")
 let paper = document.getElementById("paper")
 let scissors = document.getElementById("scissors")
+let reset = document.getElementById("reset")
 
 rock.onclick = () => console.log("user played Rock")
 paper.onclick = () => console.log("user played Paper")
