@@ -29,6 +29,8 @@ Player field */
     border: 2.5px solid;
     height: 150px;
     width: 150px;
+    margin: 0 15px 0 15px;
+    cursor: pointer;
 }
 
 #paper  {
@@ -37,6 +39,8 @@ Player field */
     border: 2.5px solid;
     height: 150px;
     width: 150px;
+    margin: 0 15px 0 15px;
+    cursor: pointer;
 }
 
 #scissors   {
@@ -45,6 +49,13 @@ Player field */
     border: 2.5px solid;
     height: 150px;
     width: 150px;
+    margin: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+button:hover    {
+    transform: scale(1.1);
+    transition: 100ms;
 }
 
 /* Reset Button */
