@@ -5,7 +5,7 @@ body    {
     background-color: #2e2e2e;
 }
 
-#title  {
+#title, #score  {
     font-family: 'Wallpoet';
     color: #ffffff;
     font-size: 50px;
@@ -65,6 +65,7 @@ button:hover    {
     border-radius: 50%;
     height: 100px;
     width: 100px;
+    cursor: pointer;
 }
 
 img {
@@ -95,7 +96,7 @@ COM field*/
         font-size: 30px;
     }
 
-    #rock, #paper, #scissors {
+    #rock, #paper, #scissors, #reset {
     background-color: #b90000;
     border-radius: 50%;
     border: 2.5px solid;
@@ -119,7 +120,7 @@ COM field*/
         font-size: 20px;
     }
 
-    #rock, #paper, #scissors {
+    #rock, #paper, #scissors, #reset {
     background-color: #b90000;
     border-radius: 50%;
     border: 2.5px solid;
