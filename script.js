@@ -11,7 +11,7 @@ paper.onclick = () => console.log("user played Paper")
 scissors.onclick = () => console.log("user played Scissors")
 reset.onclick = () => console.log("user Reset the game")
 
-
+//-------------------------------------------------------------------------------------------------------------------
 // COM function that displays random numbers between the array [0, 1, 2], based on the variable comHand string array: ["rock", "paper", "scissors"]
 
 /* Method Math.floor() rounds the received decimals numbers into whole numbers, via method Math.random()
@@ -29,9 +29,10 @@ console.log(randomNumber)
 return comHand[randomNumber]
 }
 
+document.getElementById("com").innerHTML = comHand();
 console.log(randomComHand(comHand))
 
-
+//-------------------------------------------------------------------------------------------------------------------
 // Function for the Player vs COM, Rules of Hands on if/else satements warping scores accordingly
 
 // Function with an argument between both parties 
@@ -61,7 +62,7 @@ function result(playerHand, comHand) {
     // Returns the score for all evrents
     return score
 }
-
+//-------------------------------------------------------------------------------------------------------------------
 
 /*To Do:
 Create a Score board
