@@ -36,3 +36,5 @@ function getResult(userHand, comHand)   {
     }
     return score
 }
+
+//Correct? document.getElementById("score").innerHTML = getResult(#score);
