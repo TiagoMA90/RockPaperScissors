@@ -23,7 +23,7 @@ Player field */
 }
 
 /* Player hands */
-#rock   {
+#rockButton   {
     background-color: #b90000;
     border-radius: 50%;
     border: 2.5px solid;
@@ -33,7 +33,7 @@ Player field */
     cursor: pointer;
 }
 
-#paper  {
+#paperButton  {
     background-color: #b90000;
     border-radius: 50%;
     border: 2.5px solid;
@@ -43,7 +43,7 @@ Player field */
     cursor: pointer;
 }
 
-#scissors   {
+#scissorsButton   {
     background-color: #b90000;
     border-radius: 50%;
     border: 2.5px solid;
@@ -60,7 +60,7 @@ button:hover    {
 }
 
 /* Reset Button */
-#reset  {
+#resetButton  {
     background-color: #b90000;
     border-radius: 50%;
     height: 100px;
@@ -96,7 +96,7 @@ COM field*/
         font-size: 30px;
     }
 
-    #rock, #paper, #scissors, #reset {
+    #rockButton, #paperButton, #scissorsButton, #resetButton {
     background-color: #b90000;
     border-radius: 50%;
     border: 2.5px solid;
@@ -120,7 +120,7 @@ COM field*/
         font-size: 20px;
     }
 
-    #rock, #paper, #scissors, #reset {
+    #rockButton, #paperButton, #scissorsButton, #resetButton {
     background-color: #b90000;
     border-radius: 50%;
     border: 2.5px solid;
