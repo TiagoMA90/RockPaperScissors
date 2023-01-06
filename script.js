@@ -20,7 +20,8 @@ function comChoice() {
 }
 comChoice()
 
-// Hand function between USER and COM
+// Hand function between user and com
+
 function getResult(userHand, comHand)   {
     if (userHand == comHand)    {
         score = score +0
@@ -35,15 +36,3 @@ function getResult(userHand, comHand)   {
     }
     return score
 }
-
-// listener
-
-function game() {
-
-}
-
-// Reset game
-function reset() {
-    score = 0
-    score.innerText = score
- }
