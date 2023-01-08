@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div id="comHands">
+    <h2 id="title">Rock · Paper · Scissors</h2>
+    <div id="verusPanel">
+        <div id="user"></div>
+        <p>VS</p>
         <div id="com"></div>
     </div>
-    <h2 id="title">Rock · Paper · Scissors</h2>
     <h2 id="score">0</h2>
     <div class="hands">
-        <button id="rockButton" class="lButton" value="rock"><img src="assets/images/rock.png" alt="rock"></button>
-        <button id="paperButton" class="lButton" value="paper"><img src="assets/images/paper.png" alt="paper"></button>
-        <button id="scissorsButton" class="lButton" value="scissors"><img src="assets/images/scissors.png" alt="scissors"></button>
+        <button id="rock" class="lButton" value="rock"><img src="assets/images/rock.png" alt="rock"></button>
+        <button id="paper" class="lButton" value="paper"><img src="assets/images/paper.png" alt="paper"></button>
+        <button id="scissors" class="lButton" value="scissors"><img src="assets/images/scissors.png" alt="scissors"></button>
     </div>
     <div class="hands">
-        <button id="resetButton" value="reset" onclick="reset()">RESET</button>
+        <button id="reset" value="reset" onclick="reset()">RESET</button>
     </div>
 
     <script src="https://kit.fontawesome.com/9a3068bd82.js" crossorigin="anonymous"></script>
