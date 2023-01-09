@@ -82,7 +82,7 @@ COM field*/
     justify-content: center;
 }
 /* COM hand/Button */
-#com, #user  {
+#comHand, #userHand  {
     background-color: #b90000;
     border-radius: 50%;
     border: 2.5px solid;

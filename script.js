@@ -1,40 +1,60 @@
-// Fetch the elements/buttons from the DOM
+/*// Fetch the elements/buttons from the DOM
 let rock = document.getElementById("rockButton")
 let paper = document.getElementById("paperButton")
 let scissors = document.getElementById("scissorsButton")
 let reset = document.getElementById("resetButton")
-let com = document.getElementById("com")
+let com = document.getElementById("com")/
 
 // Actions to print the onClick events into the console.log, by the user
 rock.onclick = () => console.log("user played Rock")
 paper.onclick = () => console.log("user played Paper")
 scissors.onclick = () => console.log("user played Scissors")
 reset.onclick = () => console.log("user Reset the game")
-com.onclick = () => console.log("user teased the opponent")
+com.onclick = () => console.log("user teased the opponent")*/
 
-//COM function randomly choose a hand
-function comChoice() {
-    let comHand = ["rock", "paper", "scissors"]
-    let randomNumber = Math.floor(Math.random() * comHand.length)
-    return comHand[randomNumber]
+// Fetch elements for manipulation
+let userInputs = document.getElementById("userHand")
+let comInputs = document.getElementById("comHand")
+
+let resultDisplay = document.getElementById("result")
+
+let possibleHands = document.querySelectorAll("button")
+
+let userLogs
+
+// USER hands based on click events 
+possibleHands.forEach(possibleHand => possibleHand.addEventListener("click", (event) => {
+    userLogs = event.target.id
+    userInputs.innerHTML = userLogs
+    comAI()
+    resultsByHand()
+}))
+
+// COM AI - raffles a hand within the array (Fix: "undefined" hand in the DOM???)
+function comAI() {
+    let comLogs = ["rock", "paper", "scissors"]
+    let randomNumber = Math.floor(Math.random() * possibleHands.length)
+    comInputs.innerHTML = comLogs[randomNumber]
 }
-comChoice()
 
-// Hand function between user and com
-
-function getResult(userHand, comHand)   {
-    if (userHand == comHand)    {
-        score = score +0
-    } else if (userHand == "rock" && comHand == "scissors") {
-        score = score +1
-    } else if (userHand == "paper" && comHand == "rock") {
-        score = score +1
-    } else if (userHand == "scissors" && comHand == "paper") {
-        score = score +1
+// Rules for the game between USER and COM
+function resultsByHand() {
+    if (userLogs == comLogs)    {
+        result = " Looks like we drew the same hands!"
+    } else if (userLogs === "rock" && comLogs === "scissors") {
+        result = " Darn, you broke my scissors!"
+    } else if (userLogs === "paper" && comLogs === "rock") {
+        result = " Really, your paper beats my rock?!"
+    } else if (userLogs === "scissors" && comLogs === "paper") {
+        result = " Fair enough, you cut my paper!"
     } else {
-        score = score -1
+        result = " You lost, Better luck next time."
     }
-    return score
+    resultDisplay.innerHTML = result
 }
 
-//Correct? document.getElementById("score").innerHTML = getResult(#score);
+// Reset game
+function reset() {
+    result = "Why did you reset me?"
+    resultDisplay.innerText = result
+ }
