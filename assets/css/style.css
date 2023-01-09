@@ -5,13 +5,32 @@ body    {
     background-color: #2e2e2e;
 }
 
-#title, #score, p  {
+#title {
     font-family: 'Wallpoet';
     color: #ffffff;
     font-size: 50px;
+    text-align: center;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
+}
+
+#score, #result  {
+    font-family: 'Wallpoet';
+    color: #ffffff65;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+p  {
+    font-family: 'Wallpoet';
+    color: #ffffff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 /*---Player properties---
@@ -19,7 +38,7 @@ Player field */
 .hands  {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 /* Player hands */
@@ -92,18 +111,31 @@ COM field*/
 
 @media screen and (max-width: 768px)    {
 
-    #title  {
+    #title {
         font-size: 30px;
     }
 
-    #rock, #paper, #scissors, #reset {
-    background-color: #b90000;
-    border-radius: 50%;
-    border: 2.5px solid;
-    height: 120px;
-    width: 120px;
-    margin: 0 5px 0 5px;
-    cursor: pointer;
+    #score, #result  {
+        font-size: 20px;
+    }
+
+    #rock, #paper, #scissors, #reset    {
+        background-color: #b90000;
+        border-radius: 50%;
+        border: 2.5px solid;
+        height: 120px;
+        width: 120px;
+        margin: 0 5px 0 5px;
+        cursor: pointer;
+    }
+
+    #userHand, #comHand {
+        background-color: #b90000;
+        border-radius: 50%;
+        border: 2.5px solid;
+        height: 180px;
+        width: 180px;
+        margin: 0 5px 0 5px;
     }
 
     img {
@@ -114,21 +146,38 @@ COM field*/
     }
 }
 
-@media screen and (max-width: 440px)    {
+@media screen and (max-width: 470px)    {
 
     #title  {
         font-size: 20px;
     }
 
-    #rock, #paper, #scissors, #reset {
-    background-color: #b90000;
-    border-radius: 50%;
-    border: 2.5px solid;
-    height: 100px;
-    width: 100px;
-    margin: 0 5px 0 5px;
-    cursor: pointer;
+    #result  {
+        font-size: 15px;
     }
+
+    p  {
+        font-size: 15px;
+    }
+
+    #rock, #paper, #scissors, #reset    {
+        background-color: #b90000;
+        border-radius: 50%;
+        border: 2.5px solid;
+        height: 100px;
+        width: 100px;
+        margin: 0 5px 0 5px;
+        cursor: pointer;
+    }
+
+    #userHand, #comHand  {
+        background-color: #b90000;
+        border-radius: 50%;
+        border: 2.5px solid;
+        height: 125px;
+        width: 125px;
+        margin: 0 5px 0 5px;
+        }
 
     img {
         height: 75px;
