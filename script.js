@@ -16,9 +16,9 @@ com.onclick = () => console.log("user teased the opponent")*/
 let userInputs = document.getElementById("userHand")
 let comInputs = document.getElementById("comHand")
 
-let resultDisplay = document.getElementById("result")
+let resultInputs = document.getElementById("result")
 
-let possibleHands = document.querySelectorAll("button")
+let possibleHands = document.querySelectorAll(".press")
 
 let userLogs
 
@@ -50,11 +50,11 @@ function resultsByHand() {
     } else {
         result = " You lost, Better luck next time."
     }
-    resultDisplay.innerHTML = result
+    resultInputs.innerHTML = result
 }
 
 // Reset game
 function reset() {
     result = "Why did you reset me?"
-    resultDisplay.innerText = result
+    resultInputs.innerText = result
  }
