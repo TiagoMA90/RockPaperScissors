@@ -15,11 +15,8 @@ com.onclick = () => console.log("user teased the opponent")*/
 // Fetch elements for manipulation
 let userInputs = document.getElementById("userHand")
 let comInputs = document.getElementById("comHand")
-
 let resultInputs = document.getElementById("result")
-
 let possibleHands = document.querySelectorAll(".press")
-
 let userLogs
 
 // USER hands based on click events 
