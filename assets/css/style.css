@@ -45,7 +45,7 @@ Player field */
 #rock   {
     background-color: #b90000;
     border-radius: 50%;
-    border: 2.5px solid;
+    border: 5px solid #b90000;
     height: 150px;
     width: 150px;
     margin: 0 15px 0 15px;
@@ -55,7 +55,7 @@ Player field */
 #paper  {
     background-color: #b90000;
     border-radius: 50%;
-    border: 2.5px solid;
+    border: 5px solid #b90000;
     height: 150px;
     width: 150px;
     margin: 0 15px 0 15px;
@@ -65,7 +65,7 @@ Player field */
 #scissors   {
     background-color: #b90000;
     border-radius: 50%;
-    border: 2.5px solid;
+    border: 5px solid #b90000;
     height: 150px;
     width: 150px;
     margin: 0 15px 0 15px;
@@ -85,15 +85,41 @@ button:hover    {
     height: 100px;
     width: 100px;
     cursor: pointer;
+    background: linear-gradient(225deg);
+    box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
-img {
-    height: 125px;
-    width: 125px;
-    border-radius: 50%;
-    border: 2.5px solid;
+
+.rockpic {
+    height: 100%;
+    width: 100%;
+    background: url(../images/rock.png) no-repeat center bottom;
+    background-size: 102%;
+    object-fit: cover;
+    background: linear-gradient(225deg);
+    box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
+.paperpic {
+    width: 100%;
+    height: 100%;
+    background: url(../images/paper.png) no-repeat center bottom;
+    background-size: 102%;
+    object-fit: cover;
+    background: linear-gradient(225deg);
+    box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
+    
+}
+
+.scissorspic {
+    height: 100%;
+    width: 100%;
+    background: url(../images/scissors.png) no-repeat center bottom;
+    background-size: 102%;
+    object-fit: cover;
+    background: linear-gradient(225deg);
+    box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
+}
 /*---Computer properties---
 COM field*/
 #verusPanel   {
@@ -107,6 +133,8 @@ COM field*/
     border: 2.5px solid;
     height: 200px;
     width: 200px;
+    background: linear-gradient(225deg);
+    box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
 @media screen and (max-width: 768px)    {
