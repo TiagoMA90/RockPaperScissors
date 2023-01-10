@@ -27,12 +27,29 @@ possibleHands.forEach(possibleHand => possibleHand.addEventListener("click", (ev
     resultsByHand()
 }))
 
-// COM AI - raffles a hand within the array (Fix: "undefined" hand in the DOM???)
+
+function comAI() {
+    let randomNumber = Math.floor(Math.random() * possibleHands.length)
+    
+    if (randomNumber === 1) {
+        comLogs = "rock"
+    }
+    if  (randomNumber === 2) {
+        comLogs = "scissors"
+    }
+    if (randomNumber === 3) {
+        comLogs = "paper"
+    }
+    comInputs.innerHTML = comLogs
+}
+
+
+/*// COM AI - raffles a hand within the array (function is not on parallel with the resultsByHands result)
 function comAI() {
     let comLogs = ["rock", "paper", "scissors"]
     let randomNumber = Math.floor(Math.random() * possibleHands.length)
     comInputs.innerHTML = comLogs[randomNumber]
-}
+}*/
 
 // Rules for the game between USER and COM
 function resultsByHand() {
