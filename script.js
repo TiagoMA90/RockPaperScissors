@@ -54,15 +54,15 @@ function comAI() {
 // Rules for the game between USER and COM
 function resultsByHand() {
     if (userLogs == comLogs)    {
-        result = " Looks like we drew the same hands!"
+        result = "Looks like we drew the same hands!"
     } else if (userLogs === "rock" && comLogs === "scissors") {
-        result = " Darn, you broke my scissors!"
+        result = rockText()
     } else if (userLogs === "paper" && comLogs === "rock") {
-        result = " Really, your paper beats my rock?!"
+        result = paperText()
     } else if (userLogs === "scissors" && comLogs === "paper") {
-        result = " Fair enough, you cut my paper!"
+        result = scissorsText()
     } else {
-        result = " You lost, Better luck next time."
+        result = lostText()
     }
     resultInputs.innerHTML = result
 }
@@ -72,3 +72,57 @@ function reset() {
     result = "Why did you reset me?"
     resultInputs.innerText = result
  }
+
+ // COM random text
+document.getElementById("result").innerHTML = rockText();
+document.getElementById("result").innerHTML = paperText();
+document.getElementById("result").innerHTML = scissorsText();
+document.getElementById("result").innerHTML = lostText();
+
+function rockText() {
+    let rockInputs = [
+        "Your Rock broke my Scissors!",
+        "Outstanding, you are a natural!",
+        "Rock is a strong hand.",
+        "You beat me. Let's keep playing!",
+        "Impressive. You outmatched me.",
+        "You like playing Rock, I see..."];
+
+    return rockInputs[Math.floor((Math.random() * rockInputs.length))];
+}
+
+ function paperText() {
+    let paperInputs = [
+        "Really, your Paper beats my Rock?!?",
+        "Well done, I didn't expect that!",
+        "Still trying to understand how Paper beats Rock...",
+        "You are very good. Let's go again.",
+        "Not bad, not bad at all. I'll get you next time",
+        "You warped your Paper over my Rock!"];
+
+    return paperInputs[Math.floor((Math.random() * paperInputs.length))];
+}
+
+function scissorsText() {
+    let scissorsInputs = [
+        "Fair enough, your Scissors cut my Paper!",
+        "Very well then, you won this time.",
+        "You won! Are you sure you are not cheating?",
+        "You beat me to that! Sharp hand.",
+        "Congratulations, you won.",
+        "Scissors beats Paper, No question about that!"];
+
+    return scissorsInputs[Math.floor((Math.random() * scissorsInputs.length))];
+}
+
+function lostText() {
+    let lostInputs = [
+        "Yes! I won!!!",
+        "I am getting good at this!",
+        "My dude. I should teach you how to play!",
+        "I promisse I am not cheating. Tiago gave me a fair algorithm.",
+        "This is fun. It's easy when you know how!",
+        "Nice hand, but I won!"];
+
+    return lostInputs[Math.floor((Math.random() * lostInputs.length))];
+}
