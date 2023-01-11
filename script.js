@@ -74,10 +74,6 @@ function reset() {
  }
 
  // COM random text
-document.getElementById("result").innerHTML = rockText();
-document.getElementById("result").innerHTML = paperText();
-document.getElementById("result").innerHTML = scissorsText();
-document.getElementById("result").innerHTML = lostText();
 
 function rockText() {
     let rockInputs = [
