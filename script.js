@@ -59,7 +59,7 @@ function comAI() {
 // Rules for the game between USER and COM
 function resultsByHand() {
     if (userLogs == comLogs)    {
-        result = "Looks like we drew the same hands!"
+        result = drawInputs()
     } else if (userLogs === "rock" && comLogs === "scissors") {
         result = rockText()
         userPointsIncrement = userWins()
@@ -88,6 +88,18 @@ function reset() {
 
  // COM random text
 
+ function drawText() {
+    let drawInputs = [
+        "Looks like we drew the same hands!",
+        "It's a tie, my friend. Let's continue playing.",
+        "Draw. You decide! let's make the best out of how many points?",
+        "You are a strong opponent. We drew hands to a tie!",
+        "Wise hand, but we tied this round.",
+        "Draw. Smash that button!"];
+
+    return drawInputs[Math.floor((Math.random() * drawInputs.length))];
+}
+
 function rockText() {
     let rockInputs = [
         "Your Rock broke my Scissors!",
@@ -100,13 +112,13 @@ function rockText() {
     return rockInputs[Math.floor((Math.random() * rockInputs.length))];
 }
 
- function paperText() {
+function paperText() {
     let paperInputs = [
         "Really, your Paper beats my Rock?!?",
         "Well done, I didn't expect that!",
         "Still trying to understand how Paper beats Rock...",
         "You are very good. Let's go again.",
-        "Not bad, not bad at all. I'll get you next time",
+        "Not bad, not bad at all. I'll get you next time.",
         "You warped your Paper over my Rock!"];
 
     return paperInputs[Math.floor((Math.random() * paperInputs.length))];
