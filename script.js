@@ -10,7 +10,7 @@ rock.onclick = () => console.log("user played Rock")
 paper.onclick = () => console.log("user played Paper")
 scissors.onclick = () => console.log("user played Scissors")
 reset.onclick = () => console.log("user Reset the game")
-com.onclick = () => console.log("user teased the opponent")*/
+comHand.onclick = () => console.log("user teased the opponent")*/
 
 // Fetch elements for manipulation
 let userInputs = document.getElementById("userHand")
@@ -84,6 +84,8 @@ function reset() {
     resultInputs.innerText = result
     userPoints = 0;
     comPoints = 0;
+    userPointsInputs.innerText = userPoints
+    comPointsInputs.innerText = comPoints
  }
 
  // COM random text
@@ -141,7 +143,7 @@ function lostText() {
         "Yes! I won!!!",
         "I am getting good at this!",
         "My dude. I should teach you how to play!",
-        "I promisse I am not cheating. Tiago gave me a fair algorithm.",
+        "I promisse I am not cheating. I have a fair algorithm.",
         "This is fun. It's easy when you know how!",
         "Nice hand, but I won!"];
 
