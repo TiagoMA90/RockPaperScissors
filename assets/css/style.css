@@ -50,6 +50,11 @@ Player field */
     width: 150px;
     margin: 0 15px 0 15px;
     cursor: pointer;
+    background: url(../images/rock.png) no-repeat center bottom;
+    background-size: 102%;
+    object-fit: cover;
+    background: linear-gradient(225deg);
+    box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
 #paper  {
@@ -60,6 +65,11 @@ Player field */
     width: 150px;
     margin: 0 15px 0 15px;
     cursor: pointer;
+    background: url(../images/paper.png) no-repeat center bottom;
+    background-size: 102%;
+    object-fit: cover;
+    background: linear-gradient(225deg);
+    box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
 #scissors   {
@@ -70,6 +80,11 @@ Player field */
     width: 150px;
     margin: 0 15px 0 15px;
     cursor: pointer;
+    background: url(../images/scissors.png) no-repeat center bottom;
+    background-size: 102%;
+    object-fit: cover;
+    background: linear-gradient(225deg);
+    box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
 button:hover    {
@@ -89,37 +104,6 @@ button:hover    {
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
-
-.rockpic {
-    height: 100%;
-    width: 100%;
-    background: url(../images/rock.png) no-repeat center bottom;
-    background-size: 102%;
-    object-fit: cover;
-    background: linear-gradient(225deg);
-    box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
-}
-
-.paperpic {
-    width: 100%;
-    height: 100%;
-    background: url(../images/paper.png) no-repeat center bottom;
-    background-size: 102%;
-    object-fit: cover;
-    background: linear-gradient(225deg);
-    box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
-    
-}
-
-.scissorspic {
-    height: 100%;
-    width: 100%;
-    background: url(../images/scissors.png) no-repeat center bottom;
-    background-size: 102%;
-    object-fit: cover;
-    background: linear-gradient(225deg);
-    box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
-}
 /*---Computer properties---
 COM field*/
 #verusPanel   {
