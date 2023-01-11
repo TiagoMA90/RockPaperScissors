@@ -19,6 +19,11 @@ let resultInputs = document.getElementById("result")
 let possibleHands = document.querySelectorAll(".press")
 let userLogs
 
+let userPointsInputs = document.getElementById("userPoints")
+let comPointsInputs = document.getElementById("comPoints")
+let userPoints = 0;
+let comPoints = 0;
+
 // USER hands based on click events 
 possibleHands.forEach(possibleHand => possibleHand.addEventListener("click", (event) => {
     userLogs = event.target.id
@@ -57,20 +62,28 @@ function resultsByHand() {
         result = "Looks like we drew the same hands!"
     } else if (userLogs === "rock" && comLogs === "scissors") {
         result = rockText()
+        userPointsIncrement = userWins()
     } else if (userLogs === "paper" && comLogs === "rock") {
         result = paperText()
+        userPointsIncrement = userWins()
     } else if (userLogs === "scissors" && comLogs === "paper") {
         result = scissorsText()
+        userPointsIncrement = userWins()
     } else {
         result = lostText()
+        comPointsIncrement = comWins()
     }
     resultInputs.innerHTML = result
+    userPoints.inheritText = userPointsIncrement
+    comPoints.inheritText = comPointsIncrement
 }
 
 // Reset game
 function reset() {
     result = "Why did you reset me?"
     resultInputs.innerText = result
+    userPoints = 0;
+    comPoints = 0;
  }
 
  // COM random text
@@ -122,3 +135,16 @@ function lostText() {
 
     return lostInputs[Math.floor((Math.random() * lostInputs.length))];
 }
+
+// User Wins points
+function userWins() {
+    userPoints = userPoints +1;
+    userPointsInputs.innerText = userPoints
+ }
+
+ // User Wins points
+function comWins() {
+    comPoints = comPoints +1;
+    comPointsInputs.innerText = comPoints
+ }
+
