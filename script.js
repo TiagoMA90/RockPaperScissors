@@ -48,7 +48,6 @@ function comAI() {
     comInputs.innerHTML = comLogs
 }
 
-
 /*// COM AI - raffles a hand within the array (function is not on parallel with the resultsByHands result)
 function comAI() {
     let comLogs = ["rock", "paper", "scissors"]
@@ -59,7 +58,7 @@ function comAI() {
 // Rules for the game between USER and COM
 function resultsByHand() {
     if (userLogs == comLogs)    {
-        result = drawInputs()
+        result = drawText()
     } else if (userLogs === "rock" && comLogs === "scissors") {
         result = rockText()
         userPointsIncrement = userWins()
