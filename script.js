@@ -95,8 +95,8 @@ function reset() {
     let drawInputs = [
         "Looks like we drew the same hands!",
         "It's a tie, my friend. Let's continue playing.",
-        "Draw. You decide! let's make the best out of how many points?",
-        "You are a strong opponent. We drew hands to a tie!",
+        "Draw. Let's make the best out of how many points?",
+        "We drew hands to a tie!",
         "Wise hand, but we tied this round.",
         "Draw. Smash that button!"];
 
@@ -110,6 +110,7 @@ function rockText() {
         "Rock is a strong hand.",
         "You beat me. Let's keep playing!",
         "Impressive. You outmatched me.",
+        "Very well, you won this round.",
         "You like playing Rock, I see..."];
 
     return rockInputs[Math.floor((Math.random() * rockInputs.length))];
@@ -120,8 +121,9 @@ function paperText() {
         "Really, your Paper beats my Rock?!?",
         "Well done, I didn't expect that!",
         "Still trying to understand how Paper beats Rock...",
+        "You won with a Paper hand!",
         "You are very good. Let's go again.",
-        "Not bad, not bad at all. I'll get you next time.",
+        "Not bad, not bad at all.",
         "You warped your Paper over my Rock!"];
 
     return paperInputs[Math.floor((Math.random() * paperInputs.length))];
@@ -130,9 +132,10 @@ function paperText() {
 function scissorsText() {
     let scissorsInputs = [
         "Fair enough, your Scissors cut my Paper!",
-        "Very well then, you won this time.",
         "You won! Are you sure you are not cheating?",
-        "You beat me to that! Sharp hand.",
+        "You cut my paper into pieces!",
+        "Careful with those Scissors! You win.",
+        "You beat me with a Sharp hand.",
         "Congratulations, you won.",
         "Scissors beats Paper, No question about that!"];
 
@@ -142,9 +145,11 @@ function scissorsText() {
 function lostText() {
     let lostInputs = [
         "Yes! I won!!!",
+        "My hand was stronger this time.",
         "I am getting good at this!",
-        "My dude. I should teach you how to play!",
-        "I promisse I am not cheating. I have a fair algorithm.",
+        "I win. I should teach you how to play!",
+        "I promisse I am not cheating...",
+        "Tiago gave me a fair algorithm.",
         "This is fun. It's easy when you know how!",
         "Nice hand, but I won!"];
 
