@@ -166,17 +166,17 @@ function comWins() {
 // Functions displaying images on userHand 
 function rockUserDisplay()	{
 	let rockImg = document.getElementById("userHand")
-    rockImg.src = "../images/rockhand.png"
+    rockImg.src = "assets/images/rockhand.png"
 }
 
 function paperUserDisplay()	{
 	let paperImg = document.getElementById("userHand")
-    paperImg.src = "../images/paperhand.png"
+    paperImg.src = "assets/images/paperhand.png"
 }
 
 function scissorsUserDisplay()	{
 	let scissorsImg = document.getElementById("userHand")
-    scissorsImg.src = "../images/scissorshand.png"
+    scissorsImg.src = "assets/images/scissorshand.png"
 }
 
 // Functions displaying images on comHand 
