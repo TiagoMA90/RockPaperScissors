@@ -112,7 +112,6 @@ COM field*/
 }
 /* COM hand/Button */
 #comHand, #userHand  {
-    background-color: #b90000;
     border-radius: 50%;
     border: 2.5px solid;
     height: 200px;

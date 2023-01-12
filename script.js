@@ -161,3 +161,22 @@ function comWins() {
     comPointsInputs.innerText = comPoints
  }
 
+
+
+
+
+
+function rockDisplay()	{
+	let rockImg = document.getElementById("userHand")
+    rockImg.src = "../assets/images/rockhand.png"
+}
+
+function paperDisplay()	{
+	let paperImg = document.getElementById("userHand")
+    paperImg.src = "../assets/images/paperhand.png"
+}
+
+function scissorsDisplay()	{
+	let scissorsImg = document.getElementById("userHand")
+    scissorsImg.src = "../assets/images/scissorshand.png"
+}
