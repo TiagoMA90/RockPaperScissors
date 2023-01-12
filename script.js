@@ -166,31 +166,31 @@ function comWins() {
 // Functions displaying images on userHand 
 function rockUserDisplay()	{
 	let rockImg = document.getElementById("userHand")
-    rockImg.src = "../assets/images/rockhand.png"
+    rockImg.src = "../images/rockhand.png"
 }
 
 function paperUserDisplay()	{
 	let paperImg = document.getElementById("userHand")
-    paperImg.src = "../assets/images/paperhand.png"
+    paperImg.src = "../images/paperhand.png"
 }
 
 function scissorsUserDisplay()	{
 	let scissorsImg = document.getElementById("userHand")
-    scissorsImg.src = "../assets/images/scissorshand.png"
+    scissorsImg.src = "../images/scissorshand.png"
 }
 
 // Functions displaying images on comHand 
 function rockComDisplay()	{
 	let rockImg = document.getElementById("comHand")
-    rockImg.src = "../assets/images/rockhand.png"
+    rockImg.src = "assets/images/rockhand.png"
 }
 
 function paperComDisplay()	{
 	let paperImg = document.getElementById("comHand")
-    paperImg.src = "../assets/images/paperhand.png"
+    paperImg.src = "assets/images/paperhand.png"
 }
 
 function scissorsComDisplay()	{
 	let scissorsImg = document.getElementById("comHand")
-    scissorsImg.src = "../assets/images/scissorshand.png"
+    scissorsImg.src = "assets/images/scissorshand.png"
 }
