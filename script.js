@@ -37,7 +37,7 @@ function comAI() {
     let randomNumber = Math.floor(Math.random() * possibleHands.length)
     
     if (randomNumber === 1) {
-        comComLogs = "rock"
+        comLogs = "rock"
         rockComDisplay()
     }
     if  (randomNumber === 2) {
@@ -60,7 +60,7 @@ function comAI() {
 
 // Rules for the game between USER and COM
 function resultsByHand() {
-    if (userLogs == comLogs)    {
+    if (userLogs === comLogs)    {
         result = drawText()
     } else if (userLogs === "rock" && comLogs === "scissors") {
         result = rockText()
