@@ -120,6 +120,10 @@ COM field*/
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
+#comHand    {
+    transform: scaleX(-1);
+}
+
 @media screen and (max-width: 768px)    {
 
     #title {
