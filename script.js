@@ -37,13 +37,16 @@ function comAI() {
     let randomNumber = Math.floor(Math.random() * possibleHands.length)
     
     if (randomNumber === 1) {
-        comLogs = "rock"
+        comComLogs = "rock"
+        rockComDisplay()
     }
     if  (randomNumber === 2) {
-        comLogs = "scissors"
+        comLogs = "paper"
+        paperComDisplay()
     }
     if (randomNumber === 3) {
-        comLogs = "paper"
+        comLogs = "scissors"
+        scissorsComDisplay()
     }
     comInputs.innerHTML = comLogs
 }
@@ -77,7 +80,7 @@ function resultsByHand() {
     comPoints.inheritText = comPointsIncrement
 }
 
-// Reset game
+// Reset the game back to 0 - 0
 function reset() {
     result = "Why did you reset me?"
     resultInputs.innerText = result
@@ -87,8 +90,7 @@ function reset() {
     comPointsInputs.innerText = comPoints
  }
 
- // COM random text
-
+ // COM randomly inputs text
  function drawText() {
     let drawInputs = [
         "Looks like we drew the same hands!",
@@ -149,34 +151,46 @@ function lostText() {
     return lostInputs[Math.floor((Math.random() * lostInputs.length))];
 }
 
-// User Wins points
+// USER Wins and points are incrememted by 1
 function userWins() {
     userPoints = userPoints +1;
     userPointsInputs.innerText = userPoints
  }
 
- // User Wins points
+ // COM Wins and points are incrememted by 1
 function comWins() {
     comPoints = comPoints +1;
     comPointsInputs.innerText = comPoints
  }
 
-
-
-
-
-
-function rockDisplay()	{
+// Functions displaying images on userHand 
+function rockUserDisplay()	{
 	let rockImg = document.getElementById("userHand")
     rockImg.src = "../assets/images/rockhand.png"
 }
 
-function paperDisplay()	{
+function paperUserDisplay()	{
 	let paperImg = document.getElementById("userHand")
     paperImg.src = "../assets/images/paperhand.png"
 }
 
-function scissorsDisplay()	{
+function scissorsUserDisplay()	{
 	let scissorsImg = document.getElementById("userHand")
+    scissorsImg.src = "../assets/images/scissorshand.png"
+}
+
+// Functions displaying images on comHand 
+function rockComDisplay()	{
+	let rockImg = document.getElementById("comHand")
+    rockImg.src = "../assets/images/rockhand.png"
+}
+
+function paperComDisplay()	{
+	let paperImg = document.getElementById("comHand")
+    paperImg.src = "../assets/images/paperhand.png"
+}
+
+function scissorsComDisplay()	{
+	let scissorsImg = document.getElementById("comHand")
     scissorsImg.src = "../assets/images/scissorshand.png"
 }
