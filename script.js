@@ -33,6 +33,7 @@ possibleHands.forEach(possibleHand => possibleHand.addEventListener("click", (ev
 }));
 
 
+// COM AI - raffles a hand within the array (function is not on parallel with the resultsByHands result)
 function comAI() {
     let randomNumber = Math.floor(Math.random() * possibleHands.length);
     
@@ -51,7 +52,7 @@ function comAI() {
     comInputs.innerHTML = comLogs;
 }
 
-/*// COM AI - raffles a hand within the array (function is not on parallel with the resultsByHands result)
+/*// COM AI - raffles a hand within the array (archived function)
 function comAI() {
     let comLogs = ["rock", "paper", "scissors"]
     let randomNumber = Math.floor(Math.random() * possibleHands.length)
@@ -80,6 +81,7 @@ function resultsByHand() {
     comPoints.inheritText = comPointsIncrement;
 }
 
+//-------------RESET FUNCTION-------------
 // Reset the game back to 0 - 0
 function reset() {
     result = "Why did you reset me?";
@@ -88,10 +90,26 @@ function reset() {
     comPoints = 0;
     userPointsInputs.innerText = userPoints;
     comPointsInputs.innerText = comPoints;
+    resetUserDisplay()
+    resetComDisplay()
  }
 
- // COM randomly inputs text
- function drawText() {
+// Reset USER profile image
+function resetUserDisplay()	{
+	let userImg = document.getElementById("userHand");
+    userImg.src = "assets/images/user.gif";
+}
+
+// Reset COM profile image
+function resetComDisplay()	{
+	let comImg = document.getElementById("comHand");
+    comImg.src = "assets/images/com.gif";
+}
+
+
+//----------Functions: COM randomly inputs text---------
+// Displays the following text if both USERand COM draw
+function drawText() {
     let drawInputs = [
         "Looks like we drew the same hands!",
         "It's a tie, my friend. Let's continue playing.",
@@ -103,6 +121,7 @@ function reset() {
     return drawInputs[Math.floor((Math.random() * drawInputs.length))];
 }
 
+// Displays the following text if USER wins with Rock hand
 function rockText() {
     let rockInputs = [
         "Your Rock broke my Scissors!",
@@ -116,6 +135,7 @@ function rockText() {
     return rockInputs[Math.floor((Math.random() * rockInputs.length))];
 }
 
+// Displays the following text if USER wins with Paper hand
 function paperText() {
     let paperInputs = [
         "Really, your Paper beats my Rock?!?",
@@ -129,6 +149,7 @@ function paperText() {
     return paperInputs[Math.floor((Math.random() * paperInputs.length))];
 }
 
+// Displays the following text if USER wins with Scissors hand
 function scissorsText() {
     let scissorsInputs = [
         "Fair enough, your Scissors cut my Paper!",
@@ -142,6 +163,7 @@ function scissorsText() {
     return scissorsInputs[Math.floor((Math.random() * scissorsInputs.length))];
 }
 
+// Displays the following text if COM wins
 function lostText() {
     let lostInputs = [
         "Yes! I won!!!",
@@ -156,6 +178,8 @@ function lostText() {
     return lostInputs[Math.floor((Math.random() * lostInputs.length))];
 }
 
+
+//-------Functions: SCOREBOARD incremention----------
 // USER Wins and points are incrememted by 1
 function userWins() {
     userPoints = userPoints +1;
@@ -168,33 +192,41 @@ function comWins() {
     comPointsInputs.innerText = comPoints;
  }
 
-// Functions displaying images on userHand 
+
+//--------Functions: USER vs COM profile images--------
+// Functions displaying images on userHand
+
+// Display Rock hand for USER
 function rockUserDisplay()	{
 	let rockImg = document.getElementById("userHand");
     rockImg.src = "assets/images/rockhand.png";
 }
 
+// Display Paper hand USER
 function paperUserDisplay()	{
 	let paperImg = document.getElementById("userHand");
     paperImg.src = "assets/images/paperhand.png";
 }
 
+// Display Scissors hand for USER
 function scissorsUserDisplay()	{
 	let scissorsImg = document.getElementById("userHand");
     scissorsImg.src = "assets/images/scissorshand.png";
 }
 
-// Functions displaying images on comHand 
+// Display Rock hand for COM 
 function rockComDisplay()	{
 	let rockImg = document.getElementById("comHand");
     rockImg.src = "assets/images/rockhand.png";
 }
 
+// Display Paper hand for COM
 function paperComDisplay()	{
 	let paperImg = document.getElementById("comHand");
     paperImg.src = "assets/images/paperhand.png";
 }
 
+// Display Scissors hand for COM
 function scissorsComDisplay()	{
 	let scissorsImg = document.getElementById("comHand");
     scissorsImg.src = "assets/images/scissorshand.png";
