@@ -13,42 +13,42 @@ reset.onclick = () => console.log("user Reset the game")
 comHand.onclick = () => console.log("user teased the opponent")*/
 
 // Fetch elements for manipulation
-let userInputs = document.getElementById("userHand")
-let comInputs = document.getElementById("comHand")
-let resultInputs = document.getElementById("result")
-let possibleHands = document.querySelectorAll(".press")
-let userLogs
+let userInputs = document.getElementById("userHand");
+let comInputs = document.getElementById("comHand");
+let resultInputs = document.getElementById("result");
+let possibleHands = document.querySelectorAll(".press");
+let userLogs;
 
-let userPointsInputs = document.getElementById("userPoints")
-let comPointsInputs = document.getElementById("comPoints")
+let userPointsInputs = document.getElementById("userPoints");
+let comPointsInputs = document.getElementById("comPoints");
 let userPoints = 0;
 let comPoints = 0;
 
 // USER hands based on click events 
 possibleHands.forEach(possibleHand => possibleHand.addEventListener("click", (event) => {
-    userLogs = event.target.id
-    userInputs.innerHTML = userLogs
-    comAI()
-    resultsByHand()
-}))
+    userLogs = event.target.id;
+    userInputs.innerHTML = userLogs;
+    comAI();
+    resultsByHand();
+}));
 
 
 function comAI() {
-    let randomNumber = Math.floor(Math.random() * possibleHands.length)
+    let randomNumber = Math.floor(Math.random() * possibleHands.length);
     
     if (randomNumber === 1) {
-        comLogs = "rock"
-        rockComDisplay()
+        comLogs = "rock";
+        rockComDisplay();
     }
     if  (randomNumber === 2) {
-        comLogs = "paper"
-        paperComDisplay()
+        comLogs = "paper";
+        paperComDisplay();
     }
     if (randomNumber === 3) {
-        comLogs = "scissors"
-        scissorsComDisplay()
+        comLogs = "scissors";
+        scissorsComDisplay();
     }
-    comInputs.innerHTML = comLogs
+    comInputs.innerHTML = comLogs;
 }
 
 /*// COM AI - raffles a hand within the array (function is not on parallel with the resultsByHands result)
@@ -61,33 +61,33 @@ function comAI() {
 // Rules for the game between USER and COM
 function resultsByHand() {
     if (userLogs === comLogs)    {
-        result = drawText()
+        result = drawText();
     } else if (userLogs === "rock" && comLogs === "scissors") {
-        result = rockText()
-        userPointsIncrement = userWins()
+        result = rockText();
+        userPointsIncrement = userWins();
     } else if (userLogs === "paper" && comLogs === "rock") {
-        result = paperText()
-        userPointsIncrement = userWins()
+        result = paperText();
+        userPointsIncrement = userWins();
     } else if (userLogs === "scissors" && comLogs === "paper") {
-        result = scissorsText()
-        userPointsIncrement = userWins()
+        result = scissorsText();
+        userPointsIncrement = userWins();
     } else {
-        result = lostText()
-        comPointsIncrement = comWins()
+        result = lostText();
+        comPointsIncrement = comWins();
     }
-    resultInputs.innerHTML = result
-    userPoints.inheritText = userPointsIncrement
-    comPoints.inheritText = comPointsIncrement
+    resultInputs.innerHTML = result;
+    userPoints.inheritText = userPointsIncrement;
+    comPoints.inheritText = comPointsIncrement;
 }
 
 // Reset the game back to 0 - 0
 function reset() {
-    result = "Why did you reset me?"
-    resultInputs.innerText = result
+    result = "Why did you reset me?";
+    resultInputs.innerText = result;
     userPoints = 0;
     comPoints = 0;
-    userPointsInputs.innerText = userPoints
-    comPointsInputs.innerText = comPoints
+    userPointsInputs.innerText = userPoints;
+    comPointsInputs.innerText = comPoints;
  }
 
  // COM randomly inputs text
@@ -159,43 +159,43 @@ function lostText() {
 // USER Wins and points are incrememted by 1
 function userWins() {
     userPoints = userPoints +1;
-    userPointsInputs.innerText = userPoints
+    userPointsInputs.innerText = userPoints;
  }
 
  // COM Wins and points are incrememted by 1
 function comWins() {
     comPoints = comPoints +1;
-    comPointsInputs.innerText = comPoints
+    comPointsInputs.innerText = comPoints;
  }
 
 // Functions displaying images on userHand 
 function rockUserDisplay()	{
-	let rockImg = document.getElementById("userHand")
-    rockImg.src = "assets/images/rockhand.png"
+	let rockImg = document.getElementById("userHand");
+    rockImg.src = "assets/images/rockhand.png";
 }
 
 function paperUserDisplay()	{
-	let paperImg = document.getElementById("userHand")
-    paperImg.src = "assets/images/paperhand.png"
+	let paperImg = document.getElementById("userHand");
+    paperImg.src = "assets/images/paperhand.png";
 }
 
 function scissorsUserDisplay()	{
-	let scissorsImg = document.getElementById("userHand")
-    scissorsImg.src = "assets/images/scissorshand.png"
+	let scissorsImg = document.getElementById("userHand");
+    scissorsImg.src = "assets/images/scissorshand.png";
 }
 
 // Functions displaying images on comHand 
 function rockComDisplay()	{
-	let rockImg = document.getElementById("comHand")
-    rockImg.src = "assets/images/rockhand.png"
+	let rockImg = document.getElementById("comHand");
+    rockImg.src = "assets/images/rockhand.png";
 }
 
 function paperComDisplay()	{
-	let paperImg = document.getElementById("comHand")
-    paperImg.src = "assets/images/paperhand.png"
+	let paperImg = document.getElementById("comHand");
+    paperImg.src = "assets/images/paperhand.png";
 }
 
 function scissorsComDisplay()	{
-	let scissorsImg = document.getElementById("comHand")
-    scissorsImg.src = "assets/images/scissorshand.png"
+	let scissorsImg = document.getElementById("comHand");
+    scissorsImg.src = "assets/images/scissorshand.png";
 }
