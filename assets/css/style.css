@@ -124,6 +124,37 @@ COM field*/
     transform: scaleX(-1);
 }
 
+#modalBackground    {
+    background-color: #000000bb;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#modalWindow {
+    background-color: #2e2e2e;
+    border-radius: 25px;
+    height: 75%;
+    width: 80%;
+}
+
+.modalTitle {
+    font-family: 'Wallpoet';
+}
+
+.modalText  {
+    font-family: 'Wallpoet';
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 @media screen and (max-width: 768px)    {
 
     #title {

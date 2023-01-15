@@ -231,3 +231,13 @@ function scissorsComDisplay()	{
 	let scissorsImg = document.getElementById("comHand");
     scissorsImg.src = "assets/images/scissorshand.png";
 }
+
+function gameOver() {
+    if (userPoints === 5)    {
+        reset()
+    } else (comPoints === 10) {
+        reset()
+    }
+    userPointsInputs.innerHTML = userPoints;
+    comPointsInputs.innerHTML = comPoints;
+}
