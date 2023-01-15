@@ -146,13 +146,21 @@ COM field*/
 
 .modalTitle {
     font-family: 'Wallpoet';
+    color: #ffffff;
 }
 
 .modalText  {
     font-family: 'Wallpoet';
+    color: #ffffff65;
     font-size: 30px;
     margin-left: 50px;
     margin-right: 50px;
+}
+#start  {
+    border-radius: 2%;
+    font-family: 'Wallpoet';
+    font-size: 30px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px)    {
