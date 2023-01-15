@@ -12,17 +12,25 @@ scissors.onclick = () => console.log("user played Scissors")
 reset.onclick = () => console.log("user Reset the game")
 comHand.onclick = () => console.log("user teased the opponent")*/
 
-// Fetch elements for manipulation
+//-------------Fetch elements for manipulation-------------
+// Hand properties
 let userInputs = document.getElementById("userHand");
 let comInputs = document.getElementById("comHand");
 let resultInputs = document.getElementById("result");
 let possibleHands = document.querySelectorAll(".press");
 let userLogs;
 
+// Score and Result properties
 let userPointsInputs = document.getElementById("userPoints");
 let comPointsInputs = document.getElementById("comPoints");
 let userPoints = 0;
 let comPoints = 0;
+
+// Modal properties
+let start  = document.getElementById("start");
+let modalBackground = document.getElementById("modalBackground");
+
+//--------------------------------------------------------
 
 // USER hands based on click events 
 possibleHands.forEach(possibleHand => possibleHand.addEventListener("click", (event) => {
@@ -232,9 +240,7 @@ function scissorsComDisplay()	{
     scissorsImg.src = "assets/images/scissorshand.png";
 }
 
-let start  = document.getElementById("start");
-let modalBackground = document.getElementById("modalBackground");
-
+// Modal Function closed onclick
 function startGame()  {
     modalBackground.remove("modalBackground")
 }
