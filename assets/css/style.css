@@ -18,7 +18,7 @@ body    {
 #score, #result  {
     font-family: 'Wallpoet';
     color: #ffffff65;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -95,10 +95,13 @@ button:hover    {
 
 /* Reset Button */
 #reset  {
+    font-family: 'Wallpoet';
+    font-size: 15px;
+    color: #111111;
     background-color: #b90000;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     cursor: pointer;
     background: linear-gradient(225deg);
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
@@ -140,8 +143,8 @@ COM field*/
 #modalWindow {
     background-color: #2e2e2e;
     border-radius: 25px;
-    height: 75%;
-    width: 80%;
+    height: 85%;
+    width: 85%;
 }
 
 .modalTitle {
@@ -152,7 +155,7 @@ COM field*/
 .modalText  {
     font-family: 'Wallpoet';
     color: #ffffff65;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -170,13 +173,12 @@ COM field*/
     }
 
     #score, #result  {
-        font-size: 20px;
+        font-size: 15px;
     }
 
-    #rock, #paper, #scissors, #reset    {
-        background-color: #b90000;
+    #rock, #paper, #scissors    {
         border-radius: 50%;
-        border: 2.5px solid;
+        border: 5px solid #b90000;
         height: 120px;
         width: 120px;
         margin: 0 5px 0 5px;
@@ -213,6 +215,24 @@ COM field*/
     }
 }
 
+@media screen and (max-width: 600px)    {
+
+    #modalWindow {
+        background-color: #2e2e2e;
+        border-radius: 25px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .modaltext{
+        font-family: 'Wallpoet';
+        color: #ffffff65;
+        font-size: 15px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
 @media screen and (max-width: 470px)    {
 
     #title  {
@@ -223,7 +243,7 @@ COM field*/
         font-size: 15px;
     }
 
-    #rock, #paper, #scissors, #reset    {
+    #rock, #paper, #scissors    {
         border-radius: 50%;
         border: 2.5px solid #b90000;
         height: 100px;
@@ -235,6 +255,8 @@ COM field*/
     #userHand, #comHand  {
         border-radius: 20%;
         border: 5px solid #b90000;
+        margin-left: 10px;
+        margin-right: 10pxS;
         height: 125px;
         width: 125px;
         margin: 0 5px 0 5px;
