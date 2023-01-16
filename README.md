@@ -1,108 +1,119 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Rock - Paper - Scissors
+The 'Rock - Paper - Scissors' game is an interactive webpage, where users gets to play against the computer the iconic hand game that everybody played since childhood.
 
-Welcome TiagoMA90,
+Visitors of this website will be able to play against the computer, where the the one in question, throws random hands based in a raffle algorithm.
+The website is targeted to people looking for interactivity.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Live Project
+The live website can be found [here](https://tiagoma90.github.io/rock-paper-scissors/).
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Process
+# HTML & Skeleton
+ELABORTAE: The website was designed and structured with divs grouped and organized both vertically and horizontally in the center of the page.
+INSERT SCREENSHOTS OF THE WEBSTE
 
-## Gitpod Reminders
+The body has a main div that collects all elements, with the exception of the footer, to keep it below the main content.
+Inside the main the we find h2, divs, displaing the profile images for the hands, p followed by the scoreboard, random comments by the computer, the buttons and finally a reset button for the overall score.
+The structure of the page can be more or less defined and follows the skeleton for the overall website as seen below:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The Fonts used for the Title and paragraphs was Wallpoet which gives a cool and stylish look to the overall text components of the game.
 
-`python3 -m http.server`
+# CSS & Styling
+The color palette chosen for this website...
+The cursor is transformed into a pointer, upon hovering the same over the buttons.
+The buttons are also highlghted, once pressed.
+INSERT IMAGES, COLOR & 
 
-A blue button should appear to click: _Make Public_,
+# JavaScript & Logic
+The game follows the basic rules of Rock, Paper, Scissors, where one beats one another or draws against each other.
+For each round, the User or Com(puter) deals their hands by clicking the buttons: Rock, Paper or Scissors.
+Based on the outcome, the score will therefore be either incremented by one (+1), or drawn by zero (0)
+The game also offers the the possibility to reset the score by zero, by clicking the Reset Button.
 
-Another blue button should appear to click: _Open Browser_.
+Elaborate:
+-The hands, defined by the buttons class "press" make use of the addEventListener("click") that targets the Id.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- comAI()
+This function works as the core brain for the Computer.
+It´s hands are justified by the .lenght the of the possibleHands dealt by the User.
+Conected to the hands are numbers 1, 2, 3 that correspond to the assigned hands, attributed to comLogs, by strict equality.
+Inside this function, are the functions rockComDisplay, paperComDisplay and scissorsComDisplay.
+This function makes use of the methods:
+Math.floor to round down the integer, and reject decimals.
+Math.random to raffle the random numbers, times the .length (or in this case, *3)
 
-A blue button should appear to click: _Make Public_,
+- resultsByHand()
+The Rules of the game were defined by if/else if/else statements between User and Com, on trms of strict equality.
 
-Another blue button should appear to click: _Open Browser_.
+Ergo, IF both parties have the same hands, the result falls to a Draw.
+ELSE IF the User has the Upperhand in all of the events, the User wins and the score is incrememted by one (+1), under the function userPointsIncrement()
+If all ELSE the statenets above are false, the User loses and therefore the Com score is incremmented by one (+1), under the functions comPointsIncrement()
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Inside this function, for each statemet, are other functions to make the game a bit more intriguing. As if the Com narrating/speaking to the user under rockText(), paperText() and scissorsText().
 
-To log into the Heroku toolbelt CLI:
+- function user/comWins()
+This function incremnets the score by one(+1), that would later be called inside of the if/else if/else statements.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- reset()
+This function resets the game score back to zero (0) and the profile pictures are set back to default.
+To achieve this, the innerText equals 0. Respectively, inside this function are two other functions entitled resetUserDisplay() and resetComDisplay() that manimpulates the defaults pictures back to normal.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- rock/paper/scissorsText()
+These functions contain an Array of indexed "strings" that return a random number, issued by the same syntax used in comAI. Therefore, Math.floor and Math.random
 
-------
+- rock/paper/scissorsUserDisplay() and rock/paper/scissorsComDisplay()
+These functions manipulate the DOM, by grabbing given elements and attributing new images to the same elements. They are called by the butoon, with the onclick attribute.
 
-## Release History
+- startGame()
+Function that is executed by the onclick event, called inside the .html and is executed once the Webpage is open, but removed by the .remove method.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Assay
+# Testing
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+ELABORATE
+# Validation
+ELABORATE
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+#DevTools & Lighthouse
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Technologies
+# Languages
+The website was written under HTML5 and CSS3.
+- HTML5 - Structure of the page
+- CSS3 - Style of the page
+- JSES6 - Logic and interactivity of the page
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Other forms of development as follows:
+- Tiny PNG - Image compresser
+- Convertio - Image converter
+- Google Fonts - Source of fonts
+- Github - Host for the repository
+- Gitpod - Code editor
+- Chrome DevTools - Testing tool
+- WAVE Evaluation tool - Testing tool
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Development & Deployment
+The project was developed using GitHub and GitPod platforms.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- Navigate to: "Repositories" and create "New".
+- Mark the following fields: ✓ Public ✓ Add a README file.
+- Select template: "Code-Institute-Org/gitpod-full-template".
+- Add a Repository name: "rock-paper-scissors".
+- And create Repository.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+This project was developed using GitPod and suffered various executions using the inbuild Terminal.
+- git add . - Command used before commiting.
+- git commit -m "written imperative declaration" - Command used to declare changes and updates.
+- git push - Command used to push all updates to the GitHub Repository and live version.
+- python -m http.server 8000 - Command used to load the website on port 8000.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The website was deployed via Github
+Under the given Repository, navigate to "Settings".
+Navigate to "Pages" from the left-hand bar.
+From here the "Source" should be set to "Deploy from branch"
+On "Branch" select "main" and save.
+The website was deployed via Github and the live version can be found here
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+Credits
+Content:
+ELABORATE
