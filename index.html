@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock, Paper, Scissors</title>
+    <meta name="description" content="Rock, Paper, Scissors game"/>
+    <meta name="keywords" content="Rock, Paper, Scissors, Game, Jó-ken-pô, Hands, Random"/>
+    <meta name="author" content="Tiago Moura">
 
+    <!--Website title-->
+    <title>Rock, Paper, Scissors</title>
+    
+    <!--Link to the Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <main>
+        <div>
+    <!--Main Header-->
     <h2 id="title">Rock · Paper · Scissors</h2>
+
+    <!--Profile pictures, Score and Text thrown by COM-->
     <div id="verusPanel">
         <div><img id="userHand" src="assets/images/user.gif" alt="userprofile"></div>
         <pre>  </pre><p>VS</p><pre>  </pre>
@@ -17,6 +28,8 @@
     </div>
     <h2 id="score"><span id="result">Go ahead, throw your best hands.</span></h2>
     <h2 id="score"><span id="userPoints">0</span>-<span id="comPoints">0</span></h2>
+
+    <!--Interactivity/Buttons section-->
     <div class="hands">
         <button id="rock" class="press" class="rockpic" onclick="rockUserDisplay()"></button>
         <button id="paper" class="press" class="paperpic" onclick="paperUserDisplay()"></button>
@@ -26,6 +39,7 @@
         <button id="reset" value="reset" onclick="reset()">RESET</button>
     </div>
 
+    <!--Modal side of the page-->
     <div id ="modalBackground">
         <div id="modalWindow">
             <h2 class="modalTitle">Instructions</h2>
@@ -37,7 +51,14 @@
             <button id="start" onclick="startGame()">Let's Play!</button>
         </div>
     </div>
+    </main>
+    </div>
 
+    <!--Footer-->
+    <footer>
+
+    </footer>
+    <!--Links for scripts: external fontAwesome and internal Javascript-->
     <script src="https://kit.fontawesome.com/9a3068bd82.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
