@@ -33,6 +33,22 @@ p  {
     justify-content: center;
 }
 
+footer  {
+    display: flex;
+    justify-content: end;
+}
+
+#footloose  {
+    font-size: 20px;
+    color: #d4d4d438;
+    margin-top: 50px;
+    width: auto;
+}
+
+.fa-brands   {
+    color: #d4d4d438;
+}
+
 /*---Player properties---
 Player field */
 .hands  {

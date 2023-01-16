@@ -21,42 +21,44 @@
     <h2 id="title">Rock · Paper · Scissors</h2>
 
     <!--Profile pictures, Score and Text thrown by COM-->
-    <div id="verusPanel">
-        <div><img id="userHand" src="assets/images/user.gif" alt="userprofile"></div>
-        <pre>  </pre><p>VS</p><pre>  </pre>
-        <div><img id="comHand" src="assets/images/com.gif" alt="comprofile"></div>
-    </div>
-    <h2 id="score"><span id="result">Go ahead, throw your best hands.</span></h2>
-    <h2 id="score"><span id="userPoints">0</span>-<span id="comPoints">0</span></h2>
-
-    <!--Interactivity/Buttons section-->
-    <div class="hands">
-        <button id="rock" class="press" class="rockpic" onclick="rockUserDisplay()"></button>
-        <button id="paper" class="press" class="paperpic" onclick="paperUserDisplay()"></button>
-        <button id="scissors" class="press" class="scissorspic" onclick="scissorsUserDisplay()"></button>
-    </div>
-    <div class="hands">
-        <button id="reset" value="reset" onclick="reset()">RESET</button>
-    </div>
-
-    <!--Modal side of the page-->
-    <div id ="modalBackground">
-        <div id="modalWindow">
-            <h2 class="modalTitle">Instructions</h2>
-            <img id="comHand" src="assets/images/com.gif" alt="comprofile">
-            <p class="modalText">Greetings visitor. I am COM and today we are going to play "Jó-Ken-Pô" (Rock - Paper - Scissors).</p>
-            <p class="modalText">The Rules are simple. Rock > Paper > Scissors > ...</p>
-            <p class="modalText">Push a hand, and I shall do the same in parallel to yours. Whoever has the best one, wins.</p>
-            <p class="modalText">Pretty simple, right? Then...</p>
-            <button id="start" onclick="startGame()">Let's Play!</button>
+    <div>
+        <div id="verusPanel">
+            <div><img id="userHand" src="assets/images/user.gif" alt="userprofile"></div>
+            <pre>  </pre><p>VS</p><pre>  </pre>
+            <div><img id="comHand" src="assets/images/com.gif" alt="comprofile"></div>
         </div>
-    </div>
-    </main>
+        <h2 id="score"><span id="result">Go ahead, throw your best hands.</span></h2>
+        <h2 id="score"><span id="userPoints">0</span>-<span id="comPoints">0</span></h2>
+
+        <!--Interactivity/Buttons section-->
+        <div class="hands">
+            <button id="rock" class="press" class="rockpic" onclick="rockUserDisplay()"></button>
+            <button id="paper" class="press" class="paperpic" onclick="paperUserDisplay()"></button>
+            <button id="scissors" class="press" class="scissorspic" onclick="scissorsUserDisplay()"></button>
+        </div>
+        <div class="hands">
+            <button id="reset" value="reset" onclick="reset()">RESET</button>
+        </div>
+
+        <!--Modal side of the page-->
+        <div id ="modalBackground">
+            <div id="modalWindow">
+                <h2 class="modalTitle">Instructions</h2>
+                <img id="comHand" src="assets/images/com.gif" alt="comprofile">
+                <p class="modalText">Greetings visitor. I am COM and today we are going to play "Jó-Ken-Pô" (Rock - Paper - Scissors).</p>
+                <p class="modalText">The Rules are simple. Rock > Paper > Scissors > ...</p>
+                <p class="modalText">Push a hand, and I shall do the same in parallel to yours. Whoever has the best one, wins.</p>
+                <p class="modalText">Pretty simple, right? Then...</p>
+                <button id="start" onclick="startGame()">Let's Play!</button>
+            </div>
+        </div>
+        </main>
+        </div>
     </div>
 
     <!--Footer-->
     <footer>
-
+        <p id="footloose">Developed by Tiago Moura&nbsp<a href="https://github.com/TiagoMA90" aria-label="Link to developers Github" target="_blank"><i class="fa-brands fa-github"></i></a></p>
     </footer>
     <!--Links for scripts: external fontAwesome and internal Javascript-->
     <script src="https://kit.fontawesome.com/9a3068bd82.js" crossorigin="anonymous"></script>
