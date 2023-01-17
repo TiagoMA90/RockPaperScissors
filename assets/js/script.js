@@ -79,6 +79,7 @@ function reset() {
     comPointsInputs.innerText = comPoints;
     resetUserDisplay()
     resetComDisplay()
+    startGame()
  }
 
 // Reset USER profile image
