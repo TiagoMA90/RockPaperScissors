@@ -59,6 +59,7 @@ Player field */
 
 /* Player hands */
 #rock   {
+    color: transparent;
     background-color: #b90000;
     border-radius: 50%;
     border: 5px solid #b90000;
@@ -74,6 +75,7 @@ Player field */
 }
 
 #paper  {
+    color: transparent;
     background-color: #b90000;
     border-radius: 50%;
     border: 5px solid #b90000;
@@ -89,6 +91,7 @@ Player field */
 }
 
 #scissors   {
+    color: transparent;
     background-color: #b90000;
     border-radius: 50%;
     border: 5px solid #b90000;
