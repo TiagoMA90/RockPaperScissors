@@ -14,10 +14,10 @@ let comPoints = 0;
 
 // Modal properties
 let start  = document.getElementById("start");
+let help  = document.getElementById("help");
 let modalBackground = document.getElementById("modalBackground");
 
 //--------------------------------------------------------
-
 // USER hands based on click events 
 possibleHands.forEach(possibleHand => possibleHand.addEventListener("click", (event) => {
     userLogs = event.target.id;
@@ -168,7 +168,6 @@ function lostText() {
     return lostInputs[Math.floor((Math.random() * lostInputs.length))];
 }
 
-
 //-------Functions: SCOREBOARD incremention----------
 // USER Wins and points are incrememted by 1
 function userWins() {
@@ -222,11 +221,6 @@ function scissorsComDisplay()	{
     scissorsImg.src = "assets/images/scissorshand.webp";
 }
 
-// Modal Function closed onclick
-function startGame()  {
-    modalBackground.remove("modalBackground")
-}
-
 // Audio sound effects
 let rockAudio = new Audio();
 rockAudio.src = "assets/audio/rocksfx.mp3"
@@ -236,3 +230,14 @@ paperAudio.src = "assets/audio/papersfx.mp3"
 
 let scissorsAudio = new Audio();
 scissorsAudio.src = "assets/audio/scissorssfx.mp3"
+
+let buttonAudio = new Audio();
+buttonAudio.src = "assets/audio/buttonsfx.mp3"
+
+let resetAudio = new Audio();
+resetAudio.src = "assets/audio/resetsfx.mp3"
+
+// Modal Function closed onclick
+function startGame()  {
+    modalBackground.remove()
+}
