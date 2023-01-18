@@ -1,5 +1,5 @@
 ## Rock - Paper - Scissors
-The 'Rock - Paper - Scissors' game is an interactive webpage, where users gets to play against the computer the iconic hand game that everybody played since childhood.
+The 'Rock - Paper - Scissors' game is an interactive webpage, where users get to play against the computer the iconic hand game that everybody played since childhood.
 
 Visitors of this website will be able to play against the computer, where the one in question, throws random hands based in a raffle algorithm.
 The website is targeted to people looking for a quick game.
@@ -18,7 +18,7 @@ The body has a main div that collects all elements, with the exception of the fo
 Inside the main the we find h2, divs, displaing the profile images for the hands, p followed by the scoreboard, random comments by the computer, the buttons and finally a reset button for the overall score.
 The structure of the page can be more or less defined and follows the skeleton for the overall website as seen below:
 
-The Fonts used for the Title and paragraphs was Wallpoet which gives a cool and stylish look to the overall text components of the game.
+The Fonts used for the Title and paragraphs was 'Wallpoet' which gives a cool and stylish look to the overall text components of the game.
 
 # CSS & Styling
 - The color palette chosen for this website, makes use of dark colors, such as black and gray for the background.
@@ -116,13 +116,13 @@ The website was written under HTML5 and CSS3.
 - JSES6 - Logic and interactivity of the page
 
 Other forms of development as follows:
-- Tiny PNG - Image compresser
-- Convertio - Image converter
-- Google Fonts - Source of fonts
-- Github - Host for the repository
-- Gitpod - Code editor
+- [Tiny PNG](https://tinypng.com/) - Image compresser
+- [Convertio](https://convertio.co/de/) - Image converter
+- [Google Fonts](https://fonts.google.com/) - Source of fonts
+- [Github](https://github.com/) - Host for the repository
+- [Gitpod](https://gitpod.io) - Code editor
 - Chrome DevTools - Testing tool
-- WAVE Evaluation tool - Testing tool
+- [WAVE Evaluation tool](https://wave.webaim.org/) - Testing tool
 
 ## Development & Deployment
 The project was developed using GitHub and GitPod platforms.
@@ -146,6 +146,24 @@ From here the "Source" should be set to "Deploy from branch"
 On "Branch" select "main" and save.
 The website was deployed via Github and the live version can be found here
 
-Credits
-Content:
-ELABORATE
+# Credits:
+The following sources were resorted in the creation of this website:
+- [Code Institute](https://learn.codeinstitute.net/dashboard) was used as guidance platform for the development of this project (JavaScript Module)
+- [freeCodeCamp](https://www.youtube.com/@freecodecamp) was used as orientation platform for the development of this project (JavaScript videos)
+- [Code with Ania Kubów](https://www.youtube.com/watch?v=RwFeg0cEZvQ) video tutorial was used as a reference on how to build Rock paper Scissors
+- The following [video](https://www.youtube.com/watch?v=0R6rZngcHGg) was used on applying onclick audio
+- [stackOverflow](https://stackoverflow.com/) was used as a solution platform for broken code
+- [W3Schools](https://www.w3schools.com/) was used as as a solution platform for broken code
+
+## Fonts & Icons:
+- The Fonts displayed in this website were imported from [Google Fonts](https://fonts.google.com/knowledge)
+
+## Media:
+- The images in this website were downloaded via the following links.
+[USER image](https://bestanimations.com/gifs/Smashing-Face-On-Keyboard.html)
+[COM image](https://bestanimations.com/gifs/Retro-Computer.html)
+[Button images](https://amenteemaravilhosa.com.br/ganhar-sempre-na-pedra-papel-e-tesoura/https://tenor.com/de/view/code-coding-programming-computer-science-programming-language-gif-16596559)
+[Hands](https://stock.adobe.com/images/vintage-style-woodcut-illustration-of-hands-playing-rock-paper-scissors-game/196011632)
+
+- The sound effects for the onclick functions were extracted via Youtue, and the following links.
+[Rocks sound effect](https://www.youtube.com/watch?v=npL3NfpOd9A), [Paper sound effect](https://www.youtube.com/watch?v=EuX-6t6ppzA), [Scissors sound effect](https://www.youtube.com/watch?v=omduRIpPMgw), [Play Now! sound effect](https://www.youtube.com/watch?v=KjQ8uvAt9kQ), [Reset sound effect](https://www.youtube.com/watch?v=Fw3RB7xnb80)
