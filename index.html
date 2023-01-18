@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rock, Paper, Scissors game"/>
-    <meta name="keywords" content="Rock, Paper, Scissors, Game, Jó-ken-pô, Hands, Random"/>
+    <meta name="description" content="A game about Rock, Paper & Scissors"/>
+    <meta name="keywords" content="Rock, Paper, Scissors, Game, Hands, Random"/>
     <meta name="author" content="Tiago Moura">
 
     <!--Website title-->
@@ -14,53 +14,55 @@
     <!--Link to the Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <main>
         <div>
-    <!--Main Header-->
-    <h2 id="title">Rock · Paper · Scissors</h2>
+        <!--Main Header-->
+            <h2 id="title">Rock · Paper · Scissors</h2>
 
-    <!--Profile pictures, Score and Text thrown by COM-->
-    <div>
-        <div id="verusPanel">
-            <div><img id="userHand" src="assets/images/user.gif" alt="userprofile"></div>
-            <pre>  </pre><p>VS</p><pre>  </pre>
-            <div><img id="comHand" src="assets/images/com.gif" alt="comprofile"></div>
-        </div>
-        <h2 id="score"><span id="result">Go ahead, throw your best hands.</span></h2>
-        <h2 id="score"><span id="userPoints">0</span>-<span id="comPoints">0</span></h2>
+        <!--Profile pictures, Score and Text thrown by COM-->
+            <div>
+                <div id="verusPanel">
+                    <div><img id="userHand" src="assets/images/user.gif" alt="userprofile"></div>
+                    <pre>  </pre><p>VS</p><pre>  </pre>
+                    <div><img id="comHand" src="assets/images/com.gif" alt="comprofile"></div>
+                </div>
+            </div>
+            <h2 id="scoretext"><span id="result">Go ahead, throw your best hands.</span></h2>
+            <h2 id="score"><span id="userPoints">0</span>-<span id="comPoints">0</span></h2>
 
-        <!--Interactivity/Buttons section-->
-        <div class="hands">
-            <button id="rock" class="press" class="rockpic" onclick="rockUserDisplay(); rockAudio.play();">Rock</button>
-            <button id="paper" class="press" class="paperpic" onclick="paperUserDisplay(); paperAudio.play();">Paper</button>
-            <button id="scissors" class="press" class="scissorspic" onclick="scissorsUserDisplay(); scissorsAudio.play();">Scissors</button>
-        </div>
-        <div class="hands">
-            <button id="reset" value="reset" onclick="reset(); resetAudio.play();">RESET</button>
-        </div>
+            <!--Interactivity/Hand Buttons section-->
+            <div class="hands">
+                <button id="rock" class="press" onclick="rockUserDisplay(); rockAudio.play();">Rock</button>
+                <button id="paper" class="press" onclick="paperUserDisplay(); paperAudio.play();">Paper</button>
+                <button id="scissors" class="press" onclick="scissorsUserDisplay(); scissorsAudio.play();">Scissors</button>
+            </div>
+            <!--Reset Button-->
+            <div class="hands">
+                <button id="reset" value="reset" onclick="reset(); resetAudio.play();">RESET</button>
+            </div>
 
-        <!--Modal side of the page-->
-        <div id ="modalBackground">
-            <div id="modalWindow">
-                <h2 class="modalTitle">How to Play?</h2>
-                <img id="comHand" src="assets/images/com.gif" alt="com profile">
-                <p class="modalText">Greetings USER. I am COM and today we are going to play "Jó-Ken-Pô".</p>
-                <p class="modalText">The Rules are simple.</p>
-                <img id="modalImg" src="assets/images/rulespanel.webp" alt="instructions">
-                <p class="modalText">Push a hand, and I shall do the same in parallel to yours. Whoever has the best one, wins.</p>
-                <p class="modalText">Pretty simple, right? There is not limit to score. Then...</p>
-                <button id="start" onclick="startGame(); buttonAudio.play();">Let's Play!</button>
+            <!--Modal side of the page-->
+            <div id ="modalBackground">
+                <div id="modalWindow">
+                    <h2 class="modalTitle">How to Play?</h2>
+                    <img class="comHand" src="assets/images/com.gif" alt="com profile">
+                    <p class="modalText">Greetings USER. I am COM and today we are going to play "Jó-Ken-Pô".</p>
+                    <p class="modalText">The Rules are simple.</p>
+                    <img id="modalImg" src="assets/images/rulespanel.webp" alt="instructions">
+                    <p class="modalText">Push a hand, and I shall do the same in parallel to yours. Whoever has the best one, wins.</p>
+                    <p class="modalText">Pretty simple, right? There is not limit to score. Then...</p>
+                    <button id="start" onclick="startGame(); buttonAudio.play();">Let's Play!</button>
+                </div>
             </div>
         </div>
-        </main>
-        </div>
-    </div>
 
     <!--Footer-->
-    <footer>
-        <p id="footloose">Developed by Tiago Moura&nbsp<a href="https://github.com/TiagoMA90" aria-label="Link to developers Github" target="_blank"><i class="fa-brands fa-github"></i></a></p>
-    </footer>
+        <footer>
+            <p id="footloose">Developed by Tiago Moura &nbsp;<a href="https://github.com/TiagoMA90" aria-label="Link to developers Github" target="_blank"><i class="fa-brands fa-github"></i></a></p>
+        </footer>
+    </main>
     <!--Links for scripts: external fontAwesome and internal Javascript-->
     <script src="https://kit.fontawesome.com/9a3068bd82.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>

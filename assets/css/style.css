@@ -16,7 +16,7 @@ body    {
     margin-top: 50px;
 }
 
-#score, #result  {
+#score, #scoretext, #result  {
     font-family: 'Wallpoet';
     color: #ffffff65;
     font-size: 30px;
@@ -127,6 +127,13 @@ button:hover    {
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
+#reset:hover    {
+    color: #ffffff;
+    background-color: #111111;
+    border-color: #b90000;
+}
+
+
 /*---Computer properties---
 COM field*/
 #verusPanel   {
@@ -143,7 +150,16 @@ COM field*/
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
-#comHand    {
+.comHand    {
+    border-radius: 20%;
+    border: 5px solid #b90000;
+    height: 180px;
+    width: 180px;
+    background: linear-gradient(225deg);
+    box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
+}
+
+#comHand, .comHand    {
     transform: scaleX(-1);
 }
 
@@ -193,6 +209,12 @@ COM field*/
     cursor: pointer;
 }
 
+#start:hover    {
+    color: #ffffff;
+    background-color: #111111;
+    border-color: #b90000;
+}
+
 /* Media Queries */
 @media screen and (max-width: 945px)    {
 
@@ -218,7 +240,7 @@ COM field*/
         font-size: 30px;
     }
 
-    #score, #result  {
+    #score, #scoretext, #result  {
         font-size: 15px;
     }
 
@@ -291,7 +313,7 @@ COM field*/
         cursor: pointer;
     }
 
-    #userHand, #comHand  {
+    #userHand, #comHand {
         border-radius: 20%;
         border: 5px solid #b90000;
         margin-left: 10px;
