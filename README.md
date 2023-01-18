@@ -39,7 +39,7 @@ It´s hands are justified by the .lenght the of the possibleHands dealt by the U
 Conected to the hands are numbers 1, 2, 3 that correspond to the assigned hands, attributed to comLogs, by strict equality.
 Inside this function, are the functions rockComDisplay, paperComDisplay and scissorsComDisplay.
 This function makes use of the methods:
-Math.floor to round down the integer, and reject decimals.
+Math.ceil to round up the integer, and reject decimals.
 Math.random to raffle the random numbers, times the .length (or in this case, *3)
 
 - resultsByHand()
@@ -59,7 +59,7 @@ This function resets the game score back to zero (0) and the profile pictures ar
 To achieve this, the innerText equals 0. Respectively, inside this function are two other functions entitled resetUserDisplay() and resetComDisplay() that manimpulates the defaults pictures back to normal.
 
 - rock/paper/scissorsText()
-These functions contain an Array of indexed "strings" that return a random number, issued by the same syntax used in comAI. Therefore, Math.floor and Math.random
+These functions contain an Array of indexed "strings" that return a random number, issued by the same syntax used in comAI. Therefore, Math.floor (this time) and Math.random
 
 - rock/paper/scissorsUserDisplay() and rock/paper/scissorsComDisplay()
 These functions manipulate the DOM, by grabbing given elements and attributing new images to the same elements. They are called by the butoon, with the onclick attribute.
@@ -72,9 +72,39 @@ Function that is executed by the onclick event, called inside the .html and is e
 
 ELABORATE
 # Validation
-ELABORATE
+
+All .html and .css pages of this website were validated through [validator.w3.org](https://validator.w3.org/#validate_by_input) & [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/validator) and found no errors or warnings whatsoever, both via URL and Direct Input.
+
+HTML code passed through the official W3C validator with no issues.
+See following links:
+- [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftiagoma90.github.io%2Frock-paper-scissors%2Findex.html)
+
+CSS code passed through the official (Jigsaw) validator with no issues
+- [style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftiagoma90.github.io%2Frock-paper-scissors%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=de)
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="CSS ist valide!" />
+    </a>
+</p>
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="CSS ist valide!" />
+    </a>
+</p>
+        
+
+<img src="assets/screenshots/w3display.webp" alt="Validate Index">
+
 
 #DevTools & Lighthouse
+
+The webpage for this game, under Ingognito mode, was scanned for Performance, Accessibility, Best Practices and SEO for both Desktop and Mobile devices under the Lighthouse function provided by Chrome DevTools, with favorable scores.
+REUPLOAD BUTTON IMGs IN WEBP AND RETEST
+
 
 ## Technologies
 # Languages
