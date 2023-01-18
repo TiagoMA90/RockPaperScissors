@@ -176,6 +176,9 @@ COM field*/
     border-radius: 25px;
     height: 95%;
     width: 95%;
+    position: fixed;
+    max-height: 100%;
+    overflow-y: auto;
 }
 
 .modalTitle {
@@ -201,6 +204,7 @@ COM field*/
     font-family: 'Wallpoet';
     font-size: 30px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 #start:hover    {
