@@ -1,8 +1,8 @@
 ## Rock - Paper - Scissors
 The 'Rock - Paper - Scissors' game is an interactive webpage, where users gets to play against the computer the iconic hand game that everybody played since childhood.
 
-Visitors of this website will be able to play against the computer, where the the one in question, throws random hands based in a raffle algorithm.
-The website is targeted to people looking for interactivity.
+Visitors of this website will be able to play against the computer, where the one in question, throws random hands based in a raffle algorithm.
+The website is targeted to people looking for a quick game.
 
 # Live Project
 The live website can be found [here](https://tiagoma90.github.io/rock-paper-scissors/).
@@ -19,10 +19,12 @@ The structure of the page can be more or less defined and follows the skeleton f
 The Fonts used for the Title and paragraphs was Wallpoet which gives a cool and stylish look to the overall text components of the game.
 
 # CSS & Styling
-The color palette chosen for this website...
-The cursor is transformed into a pointer, upon hovering the same over the buttons.
-The buttons are also highlghted, once pressed.
-INSERT IMAGES, COLOR & 
+- The color palette chosen for this website, makes use of dark colors, such as black and gray for the background.
+- Plain white and faded Gray for text and a vibrant red for the solid borders.
+- The cursor is transformed into a pointer, upon hovering the interactive buttons and the buttona zoom in and out, according to user interactivity.
+- The buttons and protrait frames display a round radius, and shadow outside the border.
+
+<img src="assets/screenshots/colourpalette.png" alt="colour palette">
 
 # JavaScript & Logic
 The game follows the basic rules of Rock, Paper, Scissors, where one beats one another or draws against each other.
@@ -44,11 +46,9 @@ Math.random to raffle the random numbers, times the .length (or in this case, *3
 
 - resultsByHand()
 The Rules of the game were defined by if/else if/else statements between User and Com, on trms of strict equality.
-
 Ergo, IF both parties have the same hands, the result falls to a Draw.
 ELSE IF the User has the Upperhand in all of the events, the User wins and the score is incrememted by one (+1), under the function userPointsIncrement()
 If all ELSE the statenets above are false, the User loses and therefore the Com score is incremmented by one (+1), under the functions comPointsIncrement()
-
 Inside this function, for each statemet, are other functions to make the game a bit more intriguing. As if the Com narrating/speaking to the user under rockText(), paperText() and scissorsText().
 
 - function user/comWins()
@@ -95,16 +95,16 @@ CSS code passed through the official (Jigsaw) validator with no issues
             alt="CSS ist valide!" />
     </a>
 </p>
-        
 
-<img src="assets/screenshots/w3display.webp" alt="Validate Index">
+<img src="assets/screenshots/NuHtmlChecker.png" alt="we3 checker">
 
 
 #DevTools & Lighthouse
 
 The webpage for this game, under Ingognito mode, was scanned for Performance, Accessibility, Best Practices and SEO for both Desktop and Mobile devices under the Lighthouse function provided by Chrome DevTools, with favorable scores.
-REUPLOAD BUTTON IMGs IN WEBP AND RETEST
 
+# Desktop & Mobile
+<img src="assets/screenshots/lighthouse.png" alt="we3 checker">
 
 ## Technologies
 # Languages
