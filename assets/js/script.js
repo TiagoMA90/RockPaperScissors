@@ -29,7 +29,7 @@ possibleHands.forEach(possibleHand => possibleHand.addEventListener("click", (ev
 
 // COM AI - raffles a hand within the array (function is not on parallel with the resultsByHands result)
 function comAI() {
-    let randomNumber = Math.floor(Math.random() * possibleHands.length);
+    let randomNumber = Math.ceil(Math.random() * possibleHands.length);
     
     if (randomNumber === 1) {
         comLogs = "rock";
@@ -80,8 +80,8 @@ function reset() {
     comPoints = 0;
     userPointsInputs.innerText = userPoints;
     comPointsInputs.innerText = comPoints;
-    resetUserDisplay()
-    resetComDisplay()
+    resetUserDisplay();
+    resetComDisplay();
  }
 
 // Reset USER profile image
@@ -203,6 +203,7 @@ function scissorsUserDisplay()	{
     scissorsImg.src = "assets/images/scissorshand.webp";
 }
 
+//---------------------------------------------------
 // Display Rock hand for COM 
 function rockComDisplay()	{
 	let rockImg = document.getElementById("comHand");
@@ -223,21 +224,21 @@ function scissorsComDisplay()	{
 
 // Audio sound effects
 let rockAudio = new Audio();
-rockAudio.src = "assets/audio/rocksfx.mp3"
+rockAudio.src = "assets/audio/rocksfx.mp3";
 
 let paperAudio = new Audio();
-paperAudio.src = "assets/audio/papersfx.mp3"
+paperAudio.src = "assets/audio/papersfx.mp3";
 
 let scissorsAudio = new Audio();
-scissorsAudio.src = "assets/audio/scissorssfx.mp3"
+scissorsAudio.src = "assets/audio/scissorssfx.mp3";
 
 let buttonAudio = new Audio();
-buttonAudio.src = "assets/audio/buttonsfx.mp3"
+buttonAudio.src = "assets/audio/buttonsfx.mp3";
 
 let resetAudio = new Audio();
-resetAudio.src = "assets/audio/resetsfx.mp3"
+resetAudio.src = "assets/audio/resetsfx.mp3";
 
 // Modal Function closed onclick
 function startGame()  {
-    modalBackground.remove()
+    modalBackground.remove();
 }
