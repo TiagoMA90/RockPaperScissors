@@ -4,6 +4,8 @@ The 'Rock - Paper - Scissors' game is an interactive webpage, where users gets t
 Visitors of this website will be able to play against the computer, where the one in question, throws random hands based in a raffle algorithm.
 The website is targeted to people looking for a quick game.
 
+<img src="assets/screenshots/bytesDev.png" alt="Responsiveness">
+
 # Live Project
 The live website can be found [here](https://tiagoma90.github.io/rock-paper-scissors/).
 
