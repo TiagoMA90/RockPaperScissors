@@ -71,7 +71,6 @@ Player field */
     background: url(../images/rock.png) no-repeat center bottom;
     background-size: 102%;
     object-fit: cover;
-    background: linear-gradient(225deg);
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
@@ -87,7 +86,6 @@ Player field */
     background: url(../images/paper.png) no-repeat center bottom;
     background-size: 102%;
     object-fit: cover;
-    background: linear-gradient(225deg);
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
@@ -103,7 +101,6 @@ Player field */
     background: url(../images/scissors.png) no-repeat center bottom;
     background-size: 102%;
     object-fit: cover;
-    background: linear-gradient(225deg);
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
@@ -123,7 +120,6 @@ button:hover    {
     height: 80px;
     width: 80px;
     cursor: pointer;
-    background: linear-gradient(225deg);
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
@@ -146,7 +142,6 @@ COM field*/
     border: 5px solid #b90000;
     height: 200px;
     width: 200px;
-    background: linear-gradient(225deg);
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
@@ -155,7 +150,6 @@ COM field*/
     border: 5px solid #b90000;
     height: 180px;
     width: 180px;
-    background: linear-gradient(225deg);
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
 }
 
@@ -317,7 +311,7 @@ COM field*/
         border-radius: 20%;
         border: 5px solid #b90000;
         margin-left: 10px;
-        margin-right: 10pxS;
+        margin-right: 10px;
         height: 125px;
         width: 125px;
         margin: 0 5px 0 5px;
