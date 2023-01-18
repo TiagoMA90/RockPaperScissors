@@ -68,7 +68,7 @@ Player field */
     width: 150px;
     margin: 0 15px 0 15px;
     cursor: pointer;
-    background: url(../images/rock.png) no-repeat center bottom;
+    background: url(../images/rock.webp) no-repeat center bottom;
     background-size: 102%;
     object-fit: cover;
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
@@ -83,7 +83,7 @@ Player field */
     width: 150px;
     margin: 0 15px 0 15px;
     cursor: pointer;
-    background: url(../images/paper.png) no-repeat center bottom;
+    background: url(../images/paper.webp) no-repeat center bottom;
     background-size: 102%;
     object-fit: cover;
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
@@ -98,7 +98,7 @@ Player field */
     width: 150px;
     margin: 0 15px 0 15px;
     cursor: pointer;
-    background: url(../images/scissors.png) no-repeat center bottom;
+    background: url(../images/scissors.webp) no-repeat center bottom;
     background-size: 102%;
     object-fit: cover;
     box-shadow: -10px 10px 20px #333333, 10px -10px 20px #111111;
