@@ -189,37 +189,37 @@ function comWins() {
 // Display Rock hand for USER
 function rockUserDisplay()	{
 	let rockImg = document.getElementById("userHand");
-    rockImg.src = "assets/images/rockhand.png";
+    rockImg.src = "assets/images/rockhand.webp";
 }
 
 // Display Paper hand USER
 function paperUserDisplay()	{
 	let paperImg = document.getElementById("userHand");
-    paperImg.src = "assets/images/paperhand.png";
+    paperImg.src = "assets/images/paperhand.webp";
 }
 
 // Display Scissors hand for USER
 function scissorsUserDisplay()	{
 	let scissorsImg = document.getElementById("userHand");
-    scissorsImg.src = "assets/images/scissorshand.png";
+    scissorsImg.src = "assets/images/scissorshand.webp";
 }
 
 // Display Rock hand for COM 
 function rockComDisplay()	{
 	let rockImg = document.getElementById("comHand");
-    rockImg.src = "assets/images/rockhand.png";
+    rockImg.src = "assets/images/rockhand.webp";
 }
 
 // Display Paper hand for COM
 function paperComDisplay()	{
 	let paperImg = document.getElementById("comHand");
-    paperImg.src = "assets/images/paperhand.png";
+    paperImg.src = "assets/images/paperhand.webp";
 }
 
 // Display Scissors hand for COM
 function scissorsComDisplay()	{
 	let scissorsImg = document.getElementById("comHand");
-    scissorsImg.src = "assets/images/scissorshand.png";
+    scissorsImg.src = "assets/images/scissorshand.webp";
 }
 
 // Modal Function closed onclick
