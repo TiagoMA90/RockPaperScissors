@@ -53,12 +53,15 @@ function resultsByHand() {
     } else if (userLogs === "rock" && comLogs === "scissors") {
         result = rockText();
         userPointsIncrement = userWins();
+        rockAudio.play();
     } else if (userLogs === "paper" && comLogs === "rock") {
         result = paperText();
         userPointsIncrement = userWins();
+        paperAudio.play();
     } else if (userLogs === "scissors" && comLogs === "paper") {
         result = scissorsText();
         userPointsIncrement = userWins();
+        scissorsAudio.play();
     } else {
         result = lostText();
         comPointsIncrement = comWins();
@@ -79,7 +82,6 @@ function reset() {
     comPointsInputs.innerText = comPoints;
     resetUserDisplay()
     resetComDisplay()
-    startGame()
  }
 
 // Reset USER profile image
@@ -224,3 +226,13 @@ function scissorsComDisplay()	{
 function startGame()  {
     modalBackground.remove("modalBackground")
 }
+
+// Audio sound effects
+let rockAudio = new Audio();
+rockAudio.src = "assets/audio/rocksfx.mp3"
+
+let paperAudio = new Audio();
+paperAudio.src = "assets/audio/papersfx.mp3"
+
+let scissorsAudio = new Audio();
+scissorsAudio.src = "assets/audio/scissorssfx.mp3"

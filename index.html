@@ -32,9 +32,9 @@
 
         <!--Interactivity/Buttons section-->
         <div class="hands">
-            <button id="rock" class="press" class="rockpic" onclick="rockUserDisplay()">Rock</button>
-            <button id="paper" class="press" class="paperpic" onclick="paperUserDisplay()">Paper</button>
-            <button id="scissors" class="press" class="scissorspic" onclick="scissorsUserDisplay()">Scissors</button>
+            <button id="rock" class="press" class="rockpic" onclick="rockUserDisplay(); rockAudio.play();">Rock</button>
+            <button id="paper" class="press" class="paperpic" onclick="paperUserDisplay(); paperAudio.play();">Paper</button>
+            <button id="scissors" class="press" class="scissorspic" onclick="scissorsUserDisplay(); scissorsAudio.play();">Scissors</button>
         </div>
         <div class="hands">
             <button id="reset" value="reset" onclick="reset()">RESET</button>
