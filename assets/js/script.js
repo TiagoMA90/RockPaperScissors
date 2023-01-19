@@ -17,8 +17,11 @@ let comPoints = 0;
 // Modal properties
 let modalBackground = document.getElementById("modalBackground");
 
-//--------------------------------------------------------
-// USER hands based on click events 
+/**
+ * USER hands based on click events
+ * (Event Listner based on clicks, that call a possibleHand for the user, accordingly to the ".press" in the HTML)
+ * (This function calls the function/decision for the COM, comAI, once the user pressed a button within the DOM)
+ */ 
 possibleHands.forEach(possibleHand => possibleHand.addEventListener("click", (event) => {
     userLogs = event.target.id;
     userInputs.innerHTML = userLogs;
@@ -26,8 +29,11 @@ possibleHands.forEach(possibleHand => possibleHand.addEventListener("click", (ev
     resultsByHand();
 }));
 
-
-// COM AI - raffles a hand within the array (function is not on parallel with the resultsByHands result)
+/**
+ * COM AI - raffles a hand within the array
+ * (This function rabdombly generates a number with the method Math.random, rounded by Math.ceil times the .length of possibleHands)
+ * (Each number corresnponds to a Hand and calls to manipulate the DOMs innerHTML upon call)
+ */
 function comAI() {
     let randomNumber = Math.ceil(Math.random() * possibleHands.length);
     
@@ -46,7 +52,12 @@ function comAI() {
     comInputs.innerHTML = comLogs;
 }
 
-// Rules for the game between USER and COM
+/**
+ * Rules for the game between USER and COM
+ * (Function that sets conditional rules for the game between USER and COM)
+ * (It calls the results and determines if a USER or COM won, based on the hands drawn)
+ * (Calls Audio, increments the score and displays random text)
+ */
 function resultsByHand() {
     let userPointsIncrement;
 
@@ -73,8 +84,10 @@ function resultsByHand() {
     comPoints.inheritText = comPointsIncrement;
 }
 
-//-------------RESET FUNCTION-------------
-// Reset the game back to 0 - 0
+/**
+ * Reset the game back to 0 - 0
+ * (Function that resets the score for USER and COM back to zero)
+ */
 function reset() {
     result = "Why did you reset me?";
     resultInputs.innerText = result;
@@ -99,7 +112,10 @@ function resetComDisplay()	{
 }
 
 
-//----------Functions: COM randomly inputs text---------
+/**
+ * Functions: COM randomly inputs text
+ * (Functions with an arrays of strings that randomly selects an index, to be called in the if/else if/else staments)
+ */
 // Displays the following text if both USERand COM draw
 function drawText() {
     let drawInputs = [
@@ -170,7 +186,10 @@ function lostText() {
     return lostInputs[Math.floor((Math.random() * lostInputs.length))];
 }
 
-//-------Functions: SCOREBOARD incremention----------
+/** 
+ * Increments the Score between USER and COM
+ * (Both Functions add to the Score of respective parties +1)
+ */
 // USER Wins and points are incrememted by 1
 function userWins() {
     userPoints = userPoints +1;
@@ -205,7 +224,10 @@ function scissorsUserDisplay()	{
     scissorsImg.src = "assets/images/scissorshand.webp";
 }
 
-//---------------------------------------------------
+/**
+ * Functions to change USER profile images
+ * (Displays images based on the onclick events of the USER, thyt consequently are called by the comAI function)
+ */
 // Display Rock hand for COM 
 function rockComDisplay()	{
 	let rockImg = document.getElementById("comHand");
