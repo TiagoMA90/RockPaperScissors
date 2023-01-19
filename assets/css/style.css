@@ -55,7 +55,7 @@ Player field */
 .hands  {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 /* Player hands */
@@ -132,7 +132,7 @@ button:hover    {
 
 /*---Computer properties---
 COM field*/
-#verusPanel   {
+#versusPanel   {
     display: flex;
     justify-content: center;
 }
@@ -230,6 +230,11 @@ COM field*/
         margin-left: 25px;
         margin-right: 25px;
     }
+
+    footer  {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 768px)    {
@@ -272,6 +277,11 @@ COM field*/
         font-size: 20px;
         cursor: pointer;
     }
+
+    footer  {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 600px)    {
@@ -290,15 +300,20 @@ COM field*/
         margin-left: 25px;
         margin-right: 25px;
     }
+
+    footer  {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 470px)    {
 
-    #title  {
+    #title, #versus  {
         font-size: 20px;
     }
 
-    #result  {
+    #result {
         font-size: 15px;
     }
 
@@ -333,5 +348,10 @@ COM field*/
         font-family: 'Wallpoet';
         font-size: 15px;
         cursor: pointer;
+    }
+
+    footer  {
+        display: flex;
+        justify-content: center;
     }
 }

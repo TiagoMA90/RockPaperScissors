@@ -5,6 +5,8 @@ let comInputs = document.getElementById("comHand");
 let resultInputs = document.getElementById("result");
 let possibleHands = document.querySelectorAll(".press");
 let userLogs;
+let comLogs;
+let result;
 
 // Score and Result properties
 let userPointsInputs = document.getElementById("userPoints");
@@ -48,6 +50,8 @@ function comAI() {
 
 // Rules for the game between USER and COM
 function resultsByHand() {
+    let userPointsIncrement;
+
     if (userLogs === comLogs)    {
         result = drawText();
     } else if (userLogs === "rock" && comLogs === "scissors") {
