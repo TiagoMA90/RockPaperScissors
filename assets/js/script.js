@@ -60,6 +60,7 @@ function comAI() {
  */
 function resultsByHand() {
     let userPointsIncrement;
+    let comPointsIncrement;
 
     if (userLogs === comLogs)    {
         result = drawText();
@@ -88,6 +89,24 @@ function resultsByHand() {
  * Reset the game back to 0 - 0
  * (Function that resets the score for USER and COM back to zero)
  */
+
+
+
+let reset = document.getElementById("reset");
+
+reset.addEventListener("click", (event) => {
+   result = "Why did you reset me?";
+   resultInputs.innerText = result;
+   userPoints = 0;
+   comPoints = 0;
+   userPointsInputs.innerText = userPoints;
+   comPointsInputs.innerText = comPoints;
+   resetUserDisplay();
+   resetComDisplay();
+});
+
+/* Documentation for the DeveloperNOTES: Onclick Function - This is documentation for the Developer
+
 function reset() {
     result = "Why did you reset me?";
     resultInputs.innerText = result;
@@ -97,7 +116,7 @@ function reset() {
     comPointsInputs.innerText = comPoints;
     resetUserDisplay();
     resetComDisplay();
- }
+ }*/
 
 // Reset USER profile image
 function resetUserDisplay()	{
