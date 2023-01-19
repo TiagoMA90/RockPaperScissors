@@ -28,7 +28,7 @@ The Fonts used for the Title and paragraphs was 'Wallpoet' which gives a cool an
 
 <img src="assets/screenshots/colourpalette.png" alt="colour palette">
 
-# JavaScript & Logic
+# JS & Logic
 The game follows the basic rules of Rock, Paper, Scissors, where one beats one another or draws against each other.
 For each round, the User or Com(puter) deals their hands by clicking the buttons: Rock, Paper or Scissors.
 Based on the outcome, the score will therefore be either incremented by one (+1), or drawn by zero (0)
@@ -71,6 +71,21 @@ Function that is executed by the onclick event, called inside the .html and is e
 
 ## Assay
 # Testing
+Manual testing was exectuted by exploring the functions of the game.
+All buttons act accordingly to their assigned functions.
+- The "Let's Play!" button in the Modal unlocks the game, and plays the buttonsfx.mp3, so the USER can start playing.
+
+- The "Rock" button, in the game, upon click event draws the rockhand.webp and plays the rocksfx.mp3. If the COM draws Scissors, the USER wins and the results is incremented by 1. If the COM draws Rock, it's a tie and the resuts reamins the same. If the COM draws Paper, the USER loses and the score for the COM is incremented by 1.
+
+- The "Paper" button, in the game, upon click event draws the paperhand.webp and plays the papersfx.mp3. If the COM draws Rock, the USER wins and the results is incremented by 1. If the COM draws Paper, it's a tie and the resuts reamins the same. If the COM draws Scissors, the USER loses and the score for the COM is incremented by 1.
+
+- The "Scissors" button, in the game, upon click event draws the scissorshand.webp and plays the scissorssfx.mp3. If the COM draws Paper, the USER wins and the results is incremented by 1. If the COM draws Scissors, it's a tie and the resuts reamins the same. If the COM draws Rock, the USER loses and the score for the COM is incremented by 1.
+
+- The "Reset" button, upon click, resets the game Score back to 0, the profile images for the USER and COM are set back to default and resetsfx.mp3 is played.
+
+- The Score was tested, by clicking all USER hands and all of the above statements are true for the COM. Messages are displayed on the screen based on the interaction between USER and COM.
+
+- The Footer at the bottom of the screen links and opens and external page, in a new tab for the developers GitHub page.
 
 ELABORATE
 # Validation
@@ -160,10 +175,7 @@ The following sources were resorted in the creation of this website:
 
 ## Media:
 - The images in this website were downloaded via the following links.
-[USER image](https://bestanimations.com/gifs/Smashing-Face-On-Keyboard.html)
-[COM image](https://bestanimations.com/gifs/Retro-Computer.html)
-[Button images](https://amenteemaravilhosa.com.br/ganhar-sempre-na-pedra-papel-e-tesoura/https://tenor.com/de/view/code-coding-programming-computer-science-programming-language-gif-16596559)
-[Hands](https://stock.adobe.com/images/vintage-style-woodcut-illustration-of-hands-playing-rock-paper-scissors-game/196011632)
+[USER image](https://bestanimations.com/gifs/Smashing-Face-On-Keyboard.html), [COM image](https://bestanimations.com/gifs/Retro-Computer.html), [Button images](https://amenteemaravilhosa.com.br/ganhar-sempre-na-pedra-papel-e-tesoura/https://tenor.com/de/view/code-coding-programming-computer-science-programming-language-gif-16596559), [Hands](https://stock.adobe.com/images/vintage-style-woodcut-illustration-of-hands-playing-rock-paper-scissors-game/196011632)
 
 - The sound effects for the onclick functions were extracted via Youtue, and the following links.
 [Rocks sound effect](https://www.youtube.com/watch?v=npL3NfpOd9A), [Paper sound effect](https://www.youtube.com/watch?v=EuX-6t6ppzA), [Scissors sound effect](https://www.youtube.com/watch?v=omduRIpPMgw), [Play Now! sound effect](https://www.youtube.com/watch?v=KjQ8uvAt9kQ), [Reset sound effect](https://www.youtube.com/watch?v=Fw3RB7xnb80)

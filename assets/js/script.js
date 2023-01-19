@@ -150,7 +150,7 @@ function scissorsText() {
         "Careful with those Scissors! You win.",
         "You beat me with a Sharp hand.",
         "Congratulations, you won.",
-        "Scissors beats Paper, No question about that!"];
+        "Scissors cuts Paper, you win!"];
 
     return scissorsInputs[Math.floor((Math.random() * scissorsInputs.length))];
 }
