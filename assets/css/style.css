@@ -354,3 +354,42 @@ COM field*/
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 280px)    {
+
+    #title, #versus  {
+        font-size: 15px;
+    }
+
+    #result {
+        font-size: 10px;
+    }
+
+    #rock, #paper, #scissors    {
+        height: 75px;
+        width: 75px;
+    }
+
+    #userHand, #comHand {
+        height: 80px;
+        width: 80px;
+        }
+
+    .modalText  {
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #modalImg   {
+    width: 80%; 
+    }  
+
+    #start  {
+        font-size: 15px;
+    }
+
+    #footloose  {
+        font-size: 15px;
+    }
+}

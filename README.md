@@ -1,13 +1,11 @@
 # Rock - Paper - Scissors
 The 'Rock - Paper - Scissors' game is an interactive webpage, where users get to play against the computer the iconic hand game that everybody played since childhood.
-
 Visitors of this website will be able to play against the computer, where the one in question, throws random hands based in a raffle algorithm.
 The website is targeted to people looking for a quick game.
 
 <img src="assets/screenshots/bytesDev.png" alt="Responsiveness">
 
-# Live Project
-The live website can be found [here](https://tiagoma90.github.io/rock-paper-scissors/).
+- Responsiveness from [Bytes](https://ui.dev/amiresponsive?url=https://tiagoma90.github.io/rock-paper-scissors/)
 
 # Development Process
 ## HTML & Skeleton
@@ -19,6 +17,10 @@ The structure of the page can be more or less defined and follows the skeleton f
 
 <img src="assets/screenshots/structureModal.png" alt="structure of the Modal">
 <img src="assets/screenshots/structureIndex.png" alt="structure of the Index">
+
+## Wireframes
+<img src="assets/screenshots/balsamiqindex.png" alt="Wireframes Index">
+<img src="assets/screenshots/balsamiqmodal.png" alt="Wireframes Modal">
 
 ## CSS & Styling
 - The color palette chosen for this website, makes use of dark colors, such as black and gray for the background.
@@ -145,6 +147,8 @@ Other forms of development as follows:
 - Chrome DevTools - Testing tool
 - [WAVE Evaluation tool](https://wave.webaim.org/) - Testing tool
 - [OneCompiler](https://onecompiler.com/javascript/) - JS Practice tool
+- [Balsamiq]() - Mapping Wireframes for the website
+- [Bytes.dev](https://ui.dev/amiresponsive?url=https://tiagoma90.github.io/rock-paper-scissors/) - Testing screen sizes
 
 ## Development & Deployment
 The project was developed using GitHub and GitPod platforms.
@@ -162,11 +166,11 @@ This project was developed using GitPod and suffered various executions using th
 - python -m http.server 8000 - Command used to load the website on port 8000.
 
 The website was deployed via Github
-Under the given Repository, navigate to "Settings".
-Navigate to "Pages" from the left-hand bar.
-From here the "Source" should be set to "Deploy from branch"
-On "Branch" select "main" and save.
-The website was deployed via Github and the live version can be found here
+- Under the given Repository, navigate to "Settings".
+- Navigate to "Pages" from the left-hand bar.
+- From here the "Source" should be set to "Deploy from branch"
+- On "Branch" select "main" and save.
+- The website was deployed via Github and the live website can be found [here](https://tiagoma90.github.io/rock-paper-scissors/).
 
 # Credits:
 The following sources were resorted in the creation of this website:
