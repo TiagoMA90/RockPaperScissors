@@ -355,7 +355,7 @@ COM field*/
     }
 }
 
-@media screen and (max-width: 280px)    {
+@media screen and (max-width: 380px)    {
 
     #title, #versus  {
         font-size: 15px;
