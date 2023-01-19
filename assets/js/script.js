@@ -4,6 +4,7 @@ let userInputs = document.getElementById("userHand");
 let comInputs = document.getElementById("comHand");
 let resultInputs = document.getElementById("result");
 let possibleHands = document.querySelectorAll(".press");
+let reset = document.getElementById("reset");
 let userLogs;
 let comLogs;
 let result;
@@ -89,11 +90,6 @@ function resultsByHand() {
  * Reset the game back to 0 - 0
  * (Function that resets the score for USER and COM back to zero)
  */
-
-
-
-let reset = document.getElementById("reset");
-
 reset.addEventListener("click", (event) => {
    result = "Why did you reset me?";
    resultInputs.innerText = result;
@@ -104,19 +100,6 @@ reset.addEventListener("click", (event) => {
    resetUserDisplay();
    resetComDisplay();
 });
-
-/* Documentation for the DeveloperNOTES: Onclick Function - This is documentation for the Developer
-
-function reset() {
-    result = "Why did you reset me?";
-    resultInputs.innerText = result;
-    userPoints = 0;
-    comPoints = 0;
-    userPointsInputs.innerText = userPoints;
-    comPointsInputs.innerText = comPoints;
-    resetUserDisplay();
-    resetComDisplay();
- }*/
 
 // Reset USER profile image
 function resetUserDisplay()	{
@@ -129,7 +112,6 @@ function resetComDisplay()	{
 	let comImg = document.getElementById("comHand");
     comImg.src = "assets/images/com.gif";
 }
-
 
 /**
  * Functions: COM randomly inputs text

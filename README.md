@@ -114,8 +114,12 @@ CSS code passed through the official (Jigsaw) validator with no issues
     </a>
 </p>
 
-<img src="assets/screenshots/NuHtmlChecker.png" alt="we3 checker">
-<img src="assets/screenshots/JigSawValidator.png" alt="Jigsaw">
+<img src="assets/screenshots/nuhtmlchecker.png" alt="we3 checker">
+<img src="assets/screenshots/jigsawvalidator.png" alt="Jigsaw">
+
+JS code passed through JSHint, with no issues.
+It is the Developers choice to keep the onclick events, instead of converting them into addEventListener as part of learning documentation.
+<img src="assets/screenshots/jshint.png" alt="JSHint">
 
 # DevTools & Lighthouse
 The webpage for this game, under Ingognito mode, was scanned for Performance, Accessibility, Best Practices and SEO for both Desktop and Mobile devices under the Lighthouse function provided by Chrome DevTools, with favorable scores.
