@@ -15,8 +15,6 @@ let userPoints = 0;
 let comPoints = 0;
 
 // Modal properties
-let start  = document.getElementById("start");
-let help  = document.getElementById("help");
 let modalBackground = document.getElementById("modalBackground");
 
 //--------------------------------------------------------
@@ -106,8 +104,8 @@ function resetComDisplay()	{
 function drawText() {
     let drawInputs = [
         "Looks like we drew the same hands!",
-        "It's a tie, my friend. Let's continue playing.",
-        "Draw. Let's make the best out of how many points?",
+        "It's a tie. Let's continue playing.",
+        "Draw. Best out of how many points?",
         "We drew hands to a tie!",
         "Wise hand, but we tied this round.",
         "Draw. Smash that button!"];
@@ -134,7 +132,7 @@ function paperText() {
     let paperInputs = [
         "Really, your Paper beats my Rock?!?",
         "Well done, I didn't expect that!",
-        "Still trying to understand how Paper beats Rock...",
+        "How the heck does Paper beats Rock...",
         "You won with a Paper hand!",
         "You are very good. Let's go again.",
         "Not bad, not bad at all.",
