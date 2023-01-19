@@ -4,7 +4,7 @@ Visitors of this website will be able to play against the COM, where the one in 
 
 The website is targeted to people looking for a quick fun game.
 
-<img src="assets/screenshots/bytesDev.png" alt="Responsiveness">
+<img src="assets/screenshots/bytesdev.png" alt="Responsiveness">
 
 # Development Process
 ## HTML & Skeleton
@@ -14,8 +14,8 @@ The body has a main div that collects all elements, with the exception of the fo
 Inside the main<> we find the following Tags: h2<> displaying a Title, followed by img<> flaunting the Profile Images and chosen Hands, p<> with a Scoreboard and random Text radomly sorted by the COM, the buttons<> that give the User the possibility to click and engage in battle against the COM and finally the Reset button, that allows the user to reset the Score.
 The structure of the page can be more or less mapped as seen below:
 
-<img src="assets/screenshots/structureModal.png" alt="structure of the Modal">
-<img src="assets/screenshots/structureIndex.png" alt="structure of the Index">
+<img src="assets/screenshots/structuremodal.png" alt="structure of the Modal">
+<img src="assets/screenshots/structureindex.png" alt="structure of the Index">
 
 ## Features
 The website was developed with the intent to offer interactive features such as images, buttons, sounds and overall working functionalities.
@@ -164,13 +164,12 @@ NOTE: The "Four Unused Variables" could be turned into addEventListeners and cle
 The webpage for this game, under Ingognito mode, was scanned for Performance, Accessibility, Best Practices and SEO for both Desktop and Mobile devices under the Lighthouse function provided by Chrome DevTools, with favorable scores.
 Both devices exhibited scores above 90% for Performance, Accessibility and SEO, with the exception for Mobiles on Performance, due to image size.
 
+<img src="assets/screenshots/lighthouse.png" alt="Light House">
+
 # Responsiveness 
 The webpage for this game was tested for various devices, making use of both DevTools "Toggle Device Toolbar (Ctrl + Shift + M") and Bytes.
 It was adapted accordingly to Desktops, Laptops and Mobile devices under CSS Media queries.
 - Responsiveness from [Bytes](https://ui.dev/amiresponsive?url=https://tiagoma90.github.io/rock-paper-scissors/)
-
-## Desktop & Mobile
-<img src="assets/screenshots/lightHouse.png" alt="Light House">
 
 # Technologies
 ## Languages
@@ -219,6 +218,8 @@ Uppon commiting on GitPods terminal (git commit -m "declaration"),  consecutive 
 - Commits [c4ff425](https://github.com/TiagoMA90/rock-paper-scissors/commit/0d44bc6eb56c4ccd8876eaf328dd3b06d7b9d864), [84c8633](https://github.com/TiagoMA90/rock-paper-scissors/commit/c4ff425ad9f4a9c71ea3a227acd01bce7e0caa7e), [a876c34](https://github.com/TiagoMA90/rock-paper-scissors/commit/84c86332c71cc3966af9f8c3357cee588bd4f344)
 
 <img src="assets/screenshots/failedcommits.png" alt="colour palette">
+
+Solved by a late update [0d44bc6](https://github.com/TiagoMA90/rock-paper-scissors/commit/764670872e6c30dd8ea294acd762c65cfedf8c0e)
 
 Read the following link, for more history on detailed [Documented Incidents](https://www.githubstatus.com/history)
 
