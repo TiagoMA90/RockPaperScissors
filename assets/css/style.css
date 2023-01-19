@@ -107,7 +107,7 @@ Player field */
 button:hover    {
     transform: scale(1.1);
     transition: 100ms;
-    color: #ffffff;
+    border-color: #ff0000;
 }
 
 /* Reset Button */
@@ -126,7 +126,6 @@ button:hover    {
 #reset:hover    {
     color: #ffffff;
     background-color: #111111;
-    border-color: #b90000;
 }
 
 
