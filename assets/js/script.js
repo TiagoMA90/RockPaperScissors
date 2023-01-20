@@ -1,10 +1,7 @@
-//-------------Fetch elements for manipulation-------------
-// Hand properties
+// Elements for manipulation
 let userInputs = document.getElementById("userHand");
 let comInputs = document.getElementById("comHand");
 let resultInputs = document.getElementById("result");
-let possibleHands = document.querySelectorAll(".press");
-let reset = document.getElementById("reset");
 let userLogs;
 let comLogs;
 let result;
@@ -15,14 +12,13 @@ let comPointsInputs = document.getElementById("comPoints");
 let userPoints = 0;
 let comPoints = 0;
 
-// Modal properties
-let modalBackground = document.getElementById("modalBackground");
-
 /**
  * USER hands based on click events
- * (Event Listner based on clicks, that call a possibleHand for the user, accordingly to the ".press" in the HTML)
+ * (Event Listener based on clicks, that call a possibleHand for the user, accordingly to the ".press" in the HTML)
  * (This function calls the function/decision for the COM, comAI, once the user pressed a button within the DOM)
- */ 
+ */
+let possibleHands = document.querySelectorAll(".press");
+
 possibleHands.forEach(possibleHand => possibleHand.addEventListener("click", (event) => {
     userLogs = event.target.id;
     userInputs.innerHTML = userLogs;
@@ -90,6 +86,8 @@ function resultsByHand() {
  * Reset the game back to 0 - 0
  * (Function that resets the score for USER and COM back to zero)
  */
+let reset = document.getElementById("reset");
+
 reset.addEventListener("click", (event) => {
    result = "Why did you reset me?";
    resultInputs.innerText = result;
@@ -187,6 +185,8 @@ function lostText() {
     return lostInputs[Math.floor((Math.random() * lostInputs.length))];
 }
 
+//---------------------------------------------------------------------------
+
 /** 
  * Increments the Score between USER and COM
  * (Both Functions add to the Score of respective parties +1)
@@ -195,39 +195,66 @@ function lostText() {
 function userWins() {
     userPoints = userPoints +1;
     userPointsInputs.innerText = userPoints;
- }
+}
 
  // COM Wins and points are incrememted by 1
 function comWins() {
     comPoints = comPoints +1;
     comPointsInputs.innerText = comPoints;
- }
+}
 
+//---------------------------------------------------------------------------
 
-//--------Functions: USER vs COM profile images--------
-// Functions displaying images on userHand
+// Functions and addEventListeners between USER vs COM
+/**
+ * Section that manipulates the images for respective hand (Rock)
+ * (addEventListener manipulates the images for the User, based on the clicked hand (rock), called by the function.
+ */
+let rock = document.getElementById("rock");
 
-// Display Rock hand for USER
+rock.addEventListener("click", (event) => {
+    rockUserDisplay();
+});
+
 function rockUserDisplay()	{
 	let rockImg = document.getElementById("userHand");
     rockImg.src = "assets/images/rockhand.webp";
 }
 
-// Display Paper hand USER
+/**
+ * Section that manipulates the images for the respective hand (Paper)
+ * (addEventListener manipulates the images for the User, based on the clicked hand (paper), called by the function.
+ */
+let paper = document.getElementById("paper");
+
+paper.addEventListener("click", (event) => {
+    paperUserDisplay();
+});
+
 function paperUserDisplay()	{
 	let paperImg = document.getElementById("userHand");
     paperImg.src = "assets/images/paperhand.webp";
 }
 
-// Display Scissors hand for USER
+/**
+ * Section that manipulates the images for respective hand (Scissors)
+ * (addEventListener manipulates the images for the User, based on the clicked hand (scissors), called by the function.
+ */
+let scissors = document.getElementById("scissors");
+scissors.addEventListener("click", (event) => {
+    scissorsUserDisplay();
+ });
+
 function scissorsUserDisplay()	{
 	let scissorsImg = document.getElementById("userHand");
     scissorsImg.src = "assets/images/scissorshand.webp";
 }
 
+//---------------------------------------------------------------------------
+
 /**
  * Functions to change USER profile images
- * (Displays images based on the onclick events of the USER, thyt consequently are called by the comAI function)
+ * (Displays images based on the onclick events of the USER, that consequently are called by the comAI function)
  */
 // Display Rock hand for COM 
 function rockComDisplay()	{
@@ -247,6 +274,8 @@ function scissorsComDisplay()	{
     scissorsImg.src = "assets/images/scissorshand.webp";
 }
 
+//---------------------------------------------------------------------------
+
 // Audio sound effects
 let rockAudio = new Audio();
 rockAudio.src = "assets/audio/rocksfx.mp3";
@@ -263,7 +292,15 @@ buttonAudio.src = "assets/audio/buttonsfx.mp3";
 let resetAudio = new Audio();
 resetAudio.src = "assets/audio/resetsfx.mp3";
 
+//---------------------------------------------------------------------------
+
 // Modal Function closed onclick
+let modalBackground = document.getElementById("modalBackground");
+
+modalBackground.addEventListener("click", (event) => {
+    startGame();
+});
+
 function startGame()  {
     modalBackground.remove();
 }

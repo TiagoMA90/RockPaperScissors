@@ -35,9 +35,9 @@
 
             <!--Interactivity/Hand Buttons section-->
             <div class="hands">
-                <button id="rock" class="press" onclick="rockUserDisplay(); rockAudio.play();">Rock</button>
-                <button id="paper" class="press" onclick="paperUserDisplay(); paperAudio.play();">Paper</button>
-                <button id="scissors" class="press" onclick="scissorsUserDisplay(); scissorsAudio.play();">Scissors</button>
+                <button id="rock" class="press" onclick="rockAudio.play();">Rock</button>
+                <button id="paper" class="press" onclick="paperAudio.play();">Paper</button>
+                <button id="scissors" class="press" onclick="scissorsAudio.play();">Scissors</button>
             </div>
             <!--Reset Button-->
             <div class="hands">
@@ -53,7 +53,7 @@
                     <img id="modalImg" src="assets/images/rulespanel.webp" alt="instructions">
                     <p class="modalText">Push a hand, and I shall do the same in parallel to yours. Whoever has the best one, wins.</p>
                     <p class="modalText">Pretty simple, right? There is no limit to score. Then...</p>
-                    <button id="start" onclick="startGame(); buttonAudio.play();">Let's Play!</button>
+                    <button id="start" onclick="buttonAudio.play();">Let's Play!</button>
                 </div>
             </div>
         </div>
