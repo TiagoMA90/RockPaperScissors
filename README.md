@@ -62,10 +62,11 @@ Footer
 - Plain white and faded Gray were chosen for the text and a vibrant red for the solid borders.
 - The buttons and protrait frames display a round radius, and shadow outside the border.
 - The cursor is transformed into a pointer upon hovering over buttons, further, they zoom in and out.
-- The Fonts used for the Title and paragraphs was 'Wallpoet' which gives a cool and stylish look to the overall text components of the game.
+- The Fonts used for the Title and paragraphs was ['Wallpoet'](https://fonts.google.com/?query=wallpoet) which gives a cool and stylish look to the overall text components of the game.
 - The profile pictures indicates who is the USER and who is the COM.
 
 <img src="assets/screenshots/colourpalette.png" alt="colour palette">
+<img src="assets/screenshots/fontfamily.png" alt="font family">
 
 ## JS & Logic
 The game follows the basic rules of Rock, Paper, Scissors, where one beats one another or draws against each other.
@@ -130,6 +131,8 @@ After evident tests, all buttons act accordingly to their assigned functionaliti
 
 - The Footer at the bottom of the screen displays and links Users to an external page that opens in a new tab. The Developers GitHub page.
 
+- The website was tested in different Web browsers: Chrome, Firefox and Edge for its compatibility and rretived no malfunctions.
+
 ## Validation
 Both via URL and Direct Input, the .html and .css pages of this website were validated through [validator.w3.org](https://validator.w3.org/#validate_by_input) & [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/validator). No errors or warnings were found, whatsoever.
 
@@ -165,6 +168,13 @@ The webpage for this game, under Ingognito mode, was scanned for Performance, Ac
 Both devices exhibited scores above 90% for Performance, Accessibility and SEO, with the exception for Mobiles on Performance, due to image size.
 
 <img src="assets/screenshots/lighthouse.png" alt="Light House">
+
+# WAVE Evaluation Tool
+The website was tested using chromes extension WAVE Web Accessibility Evaluation Tool.
+- Testing and examination was done for all its pages and retrieved no Errors whatsoever.
+- The website is responsive and displays a pleasing style to viewers, with colors contrasting each other.
+
+<img src="assets/screenshots/wavevaluation.png" alt="wave tester">
 
 # Responsiveness 
 The webpage for this game was tested for various devices, making use of both DevTools "Toggle Device Toolbar (Ctrl + Shift + M") and Bytes.
