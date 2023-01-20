@@ -270,6 +270,7 @@ COM field*/
         margin-left: 25px;
         margin-right: 25px;
     }
+
     #start  {
         border-radius: 2%;
         font-family: 'Wallpoet';
@@ -280,6 +281,49 @@ COM field*/
     footer  {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 740px)    {
+    #title, #versus  {
+        font-size: 20px;
+    }
+
+    #result {
+        font-size: 15px;
+    }
+
+    #rock, #paper, #scissors    {
+        border-radius: 50%;
+        border: 2.5px solid #b90000;
+        height: 100px;
+        width: 100px;
+        margin: 0 5px 0 5px;
+        cursor: pointer;
+    }
+
+    #userHand, #comHand {
+        border-radius: 20%;
+        border: 5px solid #b90000;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 125px;
+        width: 125px;
+        margin: 0 5px 0 5px;
+        }
+
+    .modalText  {
+        font-family: 'Wallpoet';
+        color: #ffffff65;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #start  {
+        border-radius: 2%;
+        font-family: 'Wallpoet';
+        font-size: 15px;
+        cursor: pointer;
     }
 }
 

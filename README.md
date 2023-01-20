@@ -225,11 +225,10 @@ The website was deployed via Github
 
 # Errors
 Uppon commiting on GitPods terminal (git commit -m "declaration"),  consecutive attempts failed to successfully deploy certain changes and updates to GitHub pages.
-- Commits [c4ff425](https://github.com/TiagoMA90/rock-paper-scissors/commit/0d44bc6eb56c4ccd8876eaf328dd3b06d7b9d864), [84c8633](https://github.com/TiagoMA90/rock-paper-scissors/commit/c4ff425ad9f4a9c71ea3a227acd01bce7e0caa7e), [a876c34](https://github.com/TiagoMA90/rock-paper-scissors/commit/84c86332c71cc3966af9f8c3357cee588bd4f344)
+- Failed to Commit the following: [c4ff425](https://github.com/TiagoMA90/rock-paper-scissors/commit/0d44bc6eb56c4ccd8876eaf328dd3b06d7b9d864), [84c8633](https://github.com/TiagoMA90/rock-paper-scissors/commit/c4ff425ad9f4a9c71ea3a227acd01bce7e0caa7e), [a876c34](https://github.com/TiagoMA90/rock-paper-scissors/commit/84c86332c71cc3966af9f8c3357cee588bd4f344)
+- Solved by a later update: [0d44bc6](https://github.com/TiagoMA90/rock-paper-scissors/commit/764670872e6c30dd8ea294acd762c65cfedf8c0e)
 
 <img src="assets/screenshots/failedcommits.png" alt="colour palette">
-
-Solved by a late update [0d44bc6](https://github.com/TiagoMA90/rock-paper-scissors/commit/764670872e6c30dd8ea294acd762c65cfedf8c0e)
 
 Read the following link, for more history on detailed [Documented Incidents](https://www.githubstatus.com/history)
 
