@@ -1,3 +1,4 @@
+//---------------------------------------------------------------------------
 // Elements for manipulation
 let userInputs = document.getElementById("userHand");
 let comInputs = document.getElementById("comHand");
@@ -12,6 +13,8 @@ let comPointsInputs = document.getElementById("comPoints");
 let userPoints = 0;
 let comPoints = 0;
 
+//---------------------------------------------------------------------------
+
 /**
  * USER hands based on click events
  * (Event Listener based on clicks, that call a possibleHand for the user, accordingly to the ".press" in the HTML)
@@ -25,6 +28,8 @@ possibleHands.forEach(possibleHand => possibleHand.addEventListener("click", (ev
     comAI();
     resultsByHand();
 }));
+
+//---------------------------------------------------------------------------
 
 /**
  * COM AI - raffles a hand within the array
@@ -48,6 +53,8 @@ function comAI() {
     }
     comInputs.innerHTML = comLogs;
 }
+
+//---------------------------------------------------------------------------
 
 /**
  * Rules for the game between USER and COM
@@ -82,6 +89,8 @@ function resultsByHand() {
     comPoints.inheritText = comPointsIncrement;
 }
 
+//---------------------------------------------------------------------------
+
 /**
  * Reset the game back to 0 - 0
  * (Function that resets the score for USER and COM back to zero)
@@ -110,6 +119,8 @@ function resetComDisplay()	{
 	let comImg = document.getElementById("comHand");
     comImg.src = "assets/images/com.gif";
 }
+
+//---------------------------------------------------------------------------
 
 /**
  * Functions: COM randomly inputs text

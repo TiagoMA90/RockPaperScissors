@@ -159,8 +159,7 @@ CSS code passed through the official (Jigsaw) validator with no issues.
 <img src="assets/screenshots/nuhtmlchecker.png" alt="we3 checker">
 <img src="assets/screenshots/jigsawvalidator.png" alt="Jigsaw">
 
-JS code passed through JSHint, with no issues, apart from "Four Unused Variables".
-NOTE: The "Four Unused Variables" could be turned into addEventListeners and clear lines 215, 221, 227 and 255. Although not the best practice, it is the Developers sole intent to keep both the onclick events in the .html and addEventListeners in .js, on this project, as part of learning documentation.
+JS code passed through JSHint, with no issues whatsoever.
 <img src="assets/screenshots/jshint.png" alt="JSHint">
 
 # DevTools & Lighthouse
