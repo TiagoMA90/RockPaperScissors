@@ -105,10 +105,10 @@ To achieve this, the innerText equals 0. Respectively, inside this function are 
 These functions contain an Array of indexed "strings" that return a random number, issued by the same syntax used in comAI. Therefore, Math.floor and Math.random.
 
 - rock/paper/scissorsUserDisplay() and rock/paper/scissorsComDisplay()
-These functions manipulate the DOMs imagery, by grabbing the given elements and attributing new images to the same elements. They are called by the button, with the onclick attribute inside the .html.
+These functions manipulate the DOMs imagery, by grabbing the given elements and attributing new images to the same elements. They are called by the button, with the Click event set by Event listeners defined as rock, paper and scissors.
 
 - startGame()
-Function that is executed by the onclick event, called inside the .html and is executed once the Webpage is open, but later removed by the .remove method once clicked.
+Function that is executed by the addEventListeer, called by the Click event and dispatched once the Webpage is open, but later removed by the .remove method once clicked.
 
 # Assay
 ## Testing
@@ -160,6 +160,7 @@ CSS code passed through the official (Jigsaw) validator with no issues.
 <img src="assets/screenshots/jigsawvalidator.png" alt="Jigsaw">
 
 JS code passed through JSHint, with no issues whatsoever.
+- JS page makes use of 317 lines of code, of which Comments, Functions, If/else if/if statements, AddEventListeners. and etc. constitute the whole logic for the game.
 <img src="assets/screenshots/jshint.png" alt="JSHint">
 
 # DevTools & Lighthouse
