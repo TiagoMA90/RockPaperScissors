@@ -173,8 +173,9 @@ Both devices exhibited scores above 90% for Performance, Accessibility and SEO, 
 The website was tested using chromes extension WAVE Web Accessibility Evaluation Tool.
 - Testing and examination was done for all its pages and retrieved no Errors whatsoever.
 - The website is responsive and displays a pleasing style to viewers, with colors contrasting each other.
+- One aria label was applied to the 
 
-<img src="assets/screenshots/wavevaluation.png" alt="wave tester">
+<img src="assets/screenshots/waveevaluation.png" alt="wave tester">
 
 # Responsiveness 
 The webpage for this game was tested for various devices, making use of both DevTools "Toggle Device Toolbar (Ctrl + Shift + M") and Bytes.
