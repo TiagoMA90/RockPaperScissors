@@ -258,8 +258,8 @@ COM field*/
     #userHand, #comHand {
         border-radius: 20%;
         border: 5px solid #b90000;
-        height: 180px;
-        width: 180px;
+        height: 160px;
+        width: 160px;
         margin: 0 5px 0 5px;
     }
     
@@ -374,8 +374,8 @@ COM field*/
         border: 5px solid #b90000;
         margin-left: 10px;
         margin-right: 10px;
-        height: 125px;
-        width: 125px;
+        height: 100px;
+        width: 100px;
         margin: 0 5px 0 5px;
         }
 

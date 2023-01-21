@@ -95,20 +95,20 @@ If all ELSE, the statements above are false, the USER loses and therefore the CO
 Inside this function, for each statemet, are other functions to make the game a bit more intriguing. The COM narrates to the user under rockText(), paperText() and scissorsText().
 
 - function user/comWins()
-This function incremnets the score by one(+1), that is later called inside of the if/else if/else statements.
+This function incremnets the score by one(+1), that is later called inside the if/else if/else statements.
 
 - reset()
 This eventListener resets the game score back to zero (0) and the profile pictures are set back to default.
-To achieve this, the innerText equals 0. Respectively, inside this function are two other functions entitled resetUserDisplay() and resetComDisplay() that manimpulates the defaults pictures back to normal.
+To achieve this, the innerText equals 0. Respectively, inside this function are two other functions entitled resetUserDisplay() and resetComDisplay() that manimpulates the default pictures back to normal.
 
 - rock/paper/scissorsText()
-These functions contain an Array of indexed "strings" that return a random number, issued by the same syntax used in comAI. Therefore, Math.floor and Math.random.
+These functions contain an Array of indexed "strings" that return a random number, issued by Math.floor and Math.random.
 
 - rock/paper/scissorsUserDisplay() and rock/paper/scissorsComDisplay()
 These functions manipulate the DOMs imagery, by grabbing the given elements and attributing new images to the same elements. They are called by the button, with the Click event set by Event listeners defined as rock, paper and scissors.
 
 - startGame()
-Function that is executed by the addEventListeer, called by the Click event and dispatched once the Webpage is open, but later removed by the .remove method once clicked.
+Function that is executed by the addEventListener, called by the Click event and dispatched once the Webpage is open, but later removed by the .remove method once clicked.
 
 # Assay
 ## Testing
@@ -125,13 +125,13 @@ After evident tests, all buttons act accordingly to their assigned functionaliti
 
 - The "Reset" button, upon clicked, resets the game Score back to 0, the profile images for the USER and COM are set back to default and resetsfx.mp3 is played.
 
-- The Score was tested, by clicking all USER hands and if all of the above statements are true for the USER and COM, the score suffers mathematical addition. Messages are further displayed on the screen, based on the interaction between USER and COM.
+- The Score was tested, by clicking all USER hands and proven, if all of the above statements are true for the USER and COM, the score suffers mathematical addition. Messages are further displayed on the screen, based on the interaction between USER and COM.
 
-- For interactivity, Upon :hover the stated buttons suffer Transform ("Rock", "Paper" & "Scissors") sizing and/or change color to Black ("Let's Play" & "Reset").
+- For interactivity, Upon :hover the buttons suffer Transform ("Rock", "Paper" & "Scissors") sizing and/or change color to Black ("Let's Play" & "Reset").
 
 - The Footer at the bottom of the screen displays and links Users to an external page that opens in a new tab. The Developers GitHub page.
 
-- The website was tested in different Web browsers: Chrome, Firefox and Edge for its compatibility and rretived no malfunctions.
+- The website was tested in different Web browsers: Chrome, Firefox and Edge for its compatibility and retrived no malfunctions.
 
 ## Validation
 Both via URL and Direct Input, the .html and .css pages of this website were validated through [validator.w3.org](https://validator.w3.org/#validate_by_input) & [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/validator). No errors or warnings were found, whatsoever.
@@ -165,15 +165,18 @@ JS code passed through JSHint, with no issues whatsoever.
 
 # DevTools & Lighthouse
 The webpage for this game, under Ingognito mode, was scanned for Performance, Accessibility, Best Practices and SEO for both Desktop and Mobile devices under the Lighthouse function provided by Chrome DevTools, with favorable scores.
-Both devices exhibited scores above 90% for Performance, Accessibility and SEO, with the exception for Mobiles on Performance, due to image size.
+Both devices exhibited scores above 90% for Performance, Accessibility and SEO, with the exception for Mobiles on Performance, due to image size and extension .gif.
 
 <img src="assets/screenshots/lighthouse.png" alt="Light House">
 
 # WAVE Evaluation Tool
 The website was tested using chromes extension WAVE Web Accessibility Evaluation Tool.
-- Testing and examination was done for all its pages and retrieved no Errors whatsoever.
-- The website is responsive and displays a pleasing style to viewers, with colors contrasting each other.
-- One aria label was applied to the 
+- Testing and examination was done for all its pages and retrieved no Errors, whatsoever.
+- The website is responsive and displays a pleasing style to the viewers, with colors contrasting each other.
+- Aria label are applied
+- Structural Elements are applied
+- The features check
+- Two Alerts were retrived (Missing Possible Headings)
 
 <img src="assets/screenshots/waveevaluation.png" alt="wave tester">
 
