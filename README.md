@@ -72,7 +72,7 @@ Footer
 The game follows the basic rules of Rock, Paper, Scissors, where one beats one another or draws against each other.
 For each round, the User or Com(puter) deals their hands by clicking the buttons: Rock, Paper or Scissors.
 Based on the outcome, the score will be either incremented by one (+1), or drawn by zero (0).
-The game also offers the the possibility to reset the score by zero, by clicking the Reset Button.
+The game also offers the possibility to reset the score by zero, by clicking the Reset Button.
 
 - The hands functionality is defined by the buttons class ".press" that make use of the addEventListener("click") that targets the Id of the hands in the DOM
 This event acts as a switch for the core functionality of the game. It calls both the functions comAI() and resultsByHand(), in parallel to the Users click.
@@ -80,8 +80,8 @@ The outcome for the COM and Result should be defined by both functions.
 
 - comAI()
 This function works as the core brain for the Computer.
-It´s hands are justified by the .lenght the of the possibleHands dealt by the User.
-Conected to the hands are numbers 1, 2, 3 that correspond to the assigned hands, attributed to comLogs, by strict equality (===).
+Its hands are justified by the .lenght the of the possibleHands dealt by the User.
+Connected to the hands are numbers 1, 2, 3 that correspond to the assigned hands, attributed to comLogs, by strict equality (===).
 Inside this function, are the functions rockComDisplay(), paperComDisplay() and scissorsComDisplay().
 This function makes use of the methods:
 Math.ceil to round up the integer, and reject decimals.
@@ -91,7 +91,7 @@ Math.random is used to raffle the random numbers, times the .length (or in this 
 The Rules of the game are defined by if/else if/else statements between USER and COM, on terms of strict equality (===).
 Ergo, IF both parties have the same hands, the result should fall to a Draw.
 ELSE IF the USER has the Upperhand in all of the events, the USER wins and the score is incrememted by one (+1), under the function userPointsIncrement()
-If all ELSE the statenets above are false, the USER loses and therefore the COM score is incremmented by one (+1), under the functions comPointsIncrement()
+If all ELSE, the statements above are false, the USER loses and therefore the COM score is incremmented by one (+1), under the functions comPointsIncrement()
 Inside this function, for each statemet, are other functions to make the game a bit more intriguing. The COM narrates to the user under rockText(), paperText() and scissorsText().
 
 - function user/comWins()
