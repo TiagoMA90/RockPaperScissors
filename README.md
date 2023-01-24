@@ -6,6 +6,9 @@ The website is targeted to people looking for a quick fun game.
 
 <img src="assets/screenshots/bytesdev.png" alt="Responsiveness">
 
+# Live Project
+The live website can be found [here](https://tiagoma90.github.io/rock-paper-scissors/).
+
 # Development Process
 ## HTML & Skeleton
 The website was designed and structured with divs grouped and organized both vertically and horizontally in the center of the page.
